@@ -9,20 +9,22 @@ class SignUp extends StatelessWidget {
       body: SafeArea(
         child: Row(
           children: [
-            Column(
-              mainAxisSize: MainAxisSize.max,
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-              Container(
-              
+            Container(
+              height: MediaQuery.of(context).size.height,
+              width: MediaQuery.of(context).size.width / 3,
+              decoration: const BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: [
+                    Color.fromARGB(255, 20, 55, 152),
+                    Color.fromARGB(255, 34, 93, 235),
+                  ],
+                ),
               ),
-              ],
             ),
             Column(
               children: const [
-                SizedBox(
-                  height: 20,
-                ),
                 Text(
                   'Create your free account',
                   style: TextStyle(
@@ -31,47 +33,16 @@ class SignUp extends StatelessWidget {
                     color: Color.fromARGB(255, 24, 111, 181),
                   ),
                 ),
-                SizedBox(
-                  height: 20,
-                ),
-                Expanded(
-                  child: TextField(
-                    decoration: InputDecoration(
-                        border: OutlineInputBorder(),
-                        labelText: 'Organisation name',
-                        hintText: 'Full Name'),
+                TextField(
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    hintText: 'Organisation name',
                   ),
                 ),
-                SizedBox(
-                  height: 20,
-                ),
-                Padding(padding: EdgeInsets.only(top: 10)),
-                Expanded(
-                  child: TextField(
-                    decoration: InputDecoration(
-                      border: OutlineInputBorder(),
-                      labelText: 'Email address',
-                      hintText: 'example@gmail.com',
-                    ),
-                  ),
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                Padding(padding: EdgeInsets.only(top: 10)),
-                Expanded(
-                  child: TextField(
-                    obscureText: true,
-                    decoration: InputDecoration(
-                      border: OutlineInputBorder(),
-                      labelText: 'Password',
-                      hintText: 'Enter Password',
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ],
+                // type in column items
+              ], //column children
+            )
+          ], //row children
         ),
       ),
     );

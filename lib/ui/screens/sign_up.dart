@@ -13,11 +13,9 @@ class SignUp extends StatelessWidget {
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                Image.asset(
-                  'assets/images/refuge3.jpg',
-                  width: MediaQuery.of(context).size.width / 3,
-                  height: MediaQuery.of(context).size.height / 3,
-                ),
+              Container(
+              
+              ),
               ],
             ),
             Column(

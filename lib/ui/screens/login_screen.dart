@@ -11,10 +11,16 @@ class LoginScreen extends StatelessWidget {
           children: [
             Column(
               children: [
-                Image.asset(
-                  'assets/images/refuge2.jpg',
-                  width: MediaQuery.of(context).size.width / 2,
+                Container(
                   height: MediaQuery.of(context).size.height,
+                  width: MediaQuery.of(context).size.width / 3,
+                  decoration: const BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: [Colors.purple, Colors.blue],
+                      begin: Alignment.bottomLeft,
+                      end: Alignment.topRight,
+                    ),
+                  ),
                 ),
                 Expanded(
                   child: Column(

@@ -80,6 +80,11 @@ class LoginScreen extends StatelessWidget {
                         color: Color.fromARGB(105, 0, 0, 0),
                       ),
                     ),
+                    Icon(
+                      Icons.visibility,
+                      color: Color.fromARGB(105, 0, 0, 0),
+                      size: 24.0,
+                    ),
                   ],
                 ),
                 const SizedBox(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:refuge_ngo/ui/screens/sign_up.dart';
+import 'package:refuge_ngo/ui/screens/login_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const SignUp(),
+      home: const LoginScreen(),
     );
   }
 }

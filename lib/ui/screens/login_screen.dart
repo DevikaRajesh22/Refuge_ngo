@@ -11,16 +11,14 @@ class LoginScreen extends StatelessWidget {
           children: [
             Column(
               children: [
-                Container(
-                  height: MediaQuery.of(context).size.height,
-                  width: MediaQuery.of(context).size.width / 3,
-                  decoration: const BoxDecoration(
-                    gradient: LinearGradient(
-                      colors: [Colors.purple, Colors.blue],
-                      begin: Alignment.bottomLeft,
-                      end: Alignment.topRight,
-                    ),
-                  ),
+                const SizedBox(
+                  height: 120,
+                ),
+                Image.asset(
+                  'assets/images/refuge2.jpg',
+                  width: MediaQuery.of(context).size.width / 2.5,
+                  height: MediaQuery.of(context).size.height / 1.5,
+                  alignment: Alignment.center,
                 ),
                 Expanded(
                   child: Column(
@@ -43,7 +41,7 @@ class LoginScreen extends StatelessWidget {
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 35,
-                    color: Colors.blue,
+                    color: Color.fromARGB(255, 62, 111, 206),
                   ),
                 ),
                 const SizedBox(
@@ -53,13 +51,14 @@ class LoginScreen extends StatelessWidget {
                   children: const [
                     Icon(
                       Icons.mail_outline,
-                      color: Colors.blue,
+                      color: Color.fromARGB(105, 0, 0, 0),
                       size: 24.0,
                     ),
                     Text(
                       '@gmail.com',
                       style: TextStyle(
                         fontSize: 20,
+                        color: Color.fromARGB(105, 0, 0, 0),
                       ),
                     ),
                   ],
@@ -71,13 +70,14 @@ class LoginScreen extends StatelessWidget {
                   children: const [
                     Icon(
                       Icons.lock_open,
-                      color: Colors.blue,
+                      color: Color.fromARGB(105, 0, 0, 0),
                       size: 24.0,
                     ),
                     Text(
                       'Password',
                       style: TextStyle(
                         fontSize: 20,
+                        color: Color.fromARGB(105, 0, 0, 0),
                       ),
                     ),
                   ],
@@ -89,7 +89,7 @@ class LoginScreen extends StatelessWidget {
                   'Forgot password?',
                   style: TextStyle(
                     fontSize: 15,
-                    color: Colors.blue,
+                    color: Color.fromARGB(255, 100, 147, 241),
                   ),
                 ),
                 const SizedBox(
@@ -97,13 +97,16 @@ class LoginScreen extends StatelessWidget {
                 ),
                 Material(
                   elevation: 4,
-                  color: Colors.blue,
+                  color: const Color.fromARGB(255, 84, 133, 234),
                   shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(40),
-                      side: const BorderSide(
-                        color: Color.fromARGB(255, 119, 114, 192),
-                        width: 0.0001,
-                      )),
+                    borderRadius: BorderRadius.circular(40),
+                    side: const BorderSide(
+                      color: Color.fromARGB(255, 5, 27, 70),
+                      width: 0.0001,
+                    ),
+                  ),
+                  textStyle: const TextStyle(
+                      color: Color.fromARGB(255, 255, 255, 255)),
                   child: const Text('Login'),
                 ),
                 const SizedBox(
@@ -120,13 +123,16 @@ class LoginScreen extends StatelessWidget {
                 ),
                 Material(
                   elevation: 4,
-                  color: Colors.blue,
+                  color: const Color.fromARGB(255, 84, 133, 234),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
                       side: const BorderSide(
-                        color: Color.fromARGB(255, 119, 114, 192),
+                        color: Color.fromARGB(255, 5, 27, 70),
                         width: 0.0001,
                       )),
+                  textStyle: const TextStyle(
+                    color: Color.fromARGB(255, 255, 255, 255),
+                  ),
                   child: const Text('Signup'),
                 ),
               ],

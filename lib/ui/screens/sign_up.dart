@@ -33,12 +33,7 @@ class SignUp extends StatelessWidget {
                     color: Color.fromARGB(255, 24, 111, 181),
                   ),
                 ),
-                TextField(
-                  decoration: InputDecoration(
-                    border: OutlineInputBorder(),
-                    hintText: 'Organisation name',
-                  ),
-                ),
+
                 // type in column items
               ], //column children
             )

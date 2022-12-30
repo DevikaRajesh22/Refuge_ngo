@@ -138,7 +138,7 @@ class SignUp extends StatelessWidget {
                         height: 20,
                       ),
                       const Text(
-                        'Information about your organisation',
+                        'Create your free account',
                         style: TextStyle(
                           fontSize: 29,
                           fontWeight: FontWeight.w400,
@@ -159,54 +159,29 @@ class SignUp extends StatelessWidget {
                         height: 10,
                       ),
                       const TextField(
+                        //email
                         decoration: InputDecoration(
                           border: OutlineInputBorder(),
-                          labelText: 'About your organisation',
-                          hintText: 'Tagline',
+                          labelText: 'Email address',
+                          hintText: 'user@gmail.com',
                         ),
                       ),
                       const SizedBox(
                         height: 10,
                       ),
                       const TextField(
+                        //pass
+                        obscureText: true,
                         decoration: InputDecoration(
                           border: OutlineInputBorder(),
-                          labelText: 'Ownership',
-                          hintText: 'Proprietor name',
+                          labelText: 'Password',
+                          suffixIcon: Icon(
+                            Icons.visibility,
+                          ),
                         ),
                       ),
                       const SizedBox(
                         height: 10,
-                      ),
-                      const TextField(
-                        decoration: InputDecoration(
-                          border: OutlineInputBorder(),
-                          labelText: 'Founding year',
-                          hintText: 'dd-mm-yyyy',
-                        ),
-                      ),
-                      const SizedBox(
-                        height: 10,
-                      ),
-                      const TextField(
-                        decoration: InputDecoration(
-                          border: OutlineInputBorder(),
-                          labelText: 'Total volunteers',
-                          hintText: 'Number',
-                        ),
-                      ),
-                      const SizedBox(
-                        height: 10,
-                      ),
-                      const TextField(
-                        decoration: InputDecoration(
-                          border: OutlineInputBorder(),
-                          labelText: 'Transportation facility',
-                          hintText: 'Number of vehicles',
-                        ),
-                      ),
-                      const SizedBox(
-                        height: 50,
                       ),
                       SizedBox(
                         width: 400,

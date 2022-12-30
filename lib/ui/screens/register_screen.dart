@@ -227,7 +227,7 @@ class RegisterScreen extends StatelessWidget {
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: const [
-                                Text('Login'),
+                                Text('Register now'),
                               ],
                             ),
                           ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:refuge_ngo/ui/screens/register_screen.dart';
+import 'package:refuge_ngo/ui/screens/signup_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const RegisterScreen(),
+      home: const SignUp(),
     );
   }
 }

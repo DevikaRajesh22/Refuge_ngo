@@ -135,18 +135,18 @@ class SignUp extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       const SizedBox(
-                        height: 20,
+                        height: 100,
                       ),
                       const Text(
-                        'Create your free account',
+                        'CREATE YOUR FREE ACCOUNT',
                         style: TextStyle(
                           fontSize: 29,
-                          fontWeight: FontWeight.w400,
+                          fontWeight: FontWeight.w600,
                           color: Color.fromARGB(255, 62, 111, 206),
                         ),
                       ),
                       const SizedBox(
-                        height: 50,
+                        height: 70,
                       ),
                       const TextField(
                         decoration: InputDecoration(
@@ -156,10 +156,9 @@ class SignUp extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(
-                        height: 10,
+                        height: 15,
                       ),
                       const TextField(
-                        //email
                         decoration: InputDecoration(
                           border: OutlineInputBorder(),
                           labelText: 'Email address',
@@ -167,10 +166,9 @@ class SignUp extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(
-                        height: 10,
+                        height: 15,
                       ),
                       const TextField(
-                        //pass
                         obscureText: true,
                         decoration: InputDecoration(
                           border: OutlineInputBorder(),
@@ -181,7 +179,7 @@ class SignUp extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(
-                        height: 10,
+                        height: 40,
                       ),
                       SizedBox(
                         width: 400,
@@ -202,11 +200,38 @@ class SignUp extends StatelessWidget {
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: const [
-                                Text('Login'),
+                                Text('Create your account'),
                               ],
                             ),
                           ),
                         ),
+                      ),
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      const Text(
+                        'OR',
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      Row(
+                        children: const [
+                          Text(
+                            'By sigining up, you agree to our communication and usage terms. Already have an account?',
+                          ),
+                          Text(
+                            ' Sign in',
+                            style: TextStyle(
+                              color: Color.fromARGB(255, 29, 100, 244),
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),

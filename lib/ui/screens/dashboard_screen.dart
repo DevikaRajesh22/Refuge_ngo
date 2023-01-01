@@ -220,8 +220,46 @@ class DashboardScreen extends StatelessWidget {
                   width: 700,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
-                    children: const [
-                      //type column children here
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: const [
+                          SizedBox(
+                            width: 160,
+                            child: TextField(
+                              decoration: InputDecoration(
+                                border: UnderlineInputBorder(),
+                                labelText: 'Search',
+                                suffixIcon: Icon(
+                                  Icons.search,
+                                ),
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.all(4.0),
+                            child: Icon(
+                              Icons.dashboard_rounded,
+                              color: Color.fromARGB(255, 29, 100, 244),
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.all(4.0),
+                            child: Icon(
+                              Icons.notifications,
+                              color: Color.fromARGB(255, 29, 100, 244),
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.all(4.0),
+                            child: Icon(
+                              Icons.account_circle_rounded,
+                              color: Color.fromARGB(255, 29, 100, 244),
+                            ),
+                          ),
+                        ],
+                      ),
+                      //column items
                     ],
                   ),
                 ),

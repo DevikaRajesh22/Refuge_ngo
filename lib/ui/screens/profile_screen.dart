@@ -312,7 +312,7 @@ class ProfileScreen extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(
-                        height: 10,
+                        height: 20,
                       ),
                       Row(
                         children: const [
@@ -424,10 +424,135 @@ class ProfileScreen extends StatelessWidget {
                           ),
                         ],
                       ),
-                      //registration details
-                      //areas of help
-                      //update button
-                      //type
+                      const SizedBox(
+                        height: 20,
+                      ),
+                      const Text(
+                        'REGISTRATION DETAILS',
+                        style: TextStyle(
+                          color: Color.fromARGB(255, 29, 100, 244),
+                          fontWeight: FontWeight.w600,
+                          fontSize: 20,
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 20,
+                      ),
+                      Row(
+                        children: const [
+                          Text(
+                            'Type of NGO :',
+                            style: TextStyle(
+                              color: Color.fromARGB(200, 0, 0, 0),
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 5,
+                          ),
+                          Text(
+                            'Trust (Non-Government)',
+                            style: TextStyle(
+                              color: Color.fromARGB(200, 0, 0, 0),
+                              fontSize: 18,
+                            ),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: const [
+                          Text(
+                            'Registration No. :',
+                            style: TextStyle(
+                              color: Color.fromARGB(200, 0, 0, 0),
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 5,
+                          ),
+                          Text(
+                            '1319',
+                            style: TextStyle(
+                              color: Color.fromARGB(200, 0, 0, 0),
+                              fontSize: 18,
+                            ),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: const [
+                          Text(
+                            'Date of registration:',
+                            style: TextStyle(
+                              color: Color.fromARGB(200, 0, 0, 0),
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 5,
+                          ),
+                          Text(
+                            'December 15 2008',
+                            style: TextStyle(
+                              color: Color.fromARGB(200, 0, 0, 0),
+                              fontSize: 18,
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 20,
+                      ),
+                      const Text(
+                        'AREA OF HELP',
+                        style: TextStyle(
+                          color: Color.fromARGB(255, 29, 100, 244),
+                          fontWeight: FontWeight.w600,
+                          fontSize: 20,
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 20,
+                      ),
+                      const Text(
+                        'Disaster Management, Children, Education & Literacy, Health & Family Welfare, Nutrition, Science & Technology, Vocational Training, Women\'s development and Empowerement',
+                        style: TextStyle(
+                          color: Color.fromARGB(200, 0, 0, 0),
+                          fontSize: 18,
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 40,
+                      ),
+                      SizedBox(
+                        width: 250,
+                        child: Material(
+                          elevation: 4,
+                          color: const Color.fromARGB(255, 84, 133, 234),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            side: const BorderSide(
+                              color: Color.fromARGB(255, 5, 27, 70),
+                              width: 0.0001,
+                            ),
+                          ),
+                          textStyle: const TextStyle(
+                              color: Color.fromARGB(255, 255, 255, 255)),
+                          child: Padding(
+                            padding: const EdgeInsets.all(10),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: const [
+                                Text('Update'),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ),

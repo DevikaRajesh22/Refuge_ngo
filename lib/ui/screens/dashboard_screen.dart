@@ -73,13 +73,13 @@ class DashboardScreen extends StatelessWidget {
                           padding: EdgeInsets.all(8.0),
                           child: Icon(
                             Icons.account_circle_rounded,
-                            color: Color.fromARGB(255, 255, 255, 255),
+                            color: Color.fromARGB(200, 255, 255, 255),
                           ),
                         ),
                         Text(
                           'Profile',
                           style: TextStyle(
-                            color: Color.fromARGB(255, 255, 255, 255),
+                            color: Color.fromARGB(200, 255, 255, 255),
                             fontSize: 20,
                           ),
                         ),
@@ -98,13 +98,13 @@ class DashboardScreen extends StatelessWidget {
                           padding: EdgeInsets.all(8.0),
                           child: Icon(
                             Icons.location_on,
-                            color: Color.fromARGB(255, 255, 255, 255),
+                            color: Color.fromARGB(200, 255, 255, 255),
                           ),
                         ),
                         Text(
                           'Map',
                           style: TextStyle(
-                            color: Color.fromARGB(255, 255, 255, 255),
+                            color: Color.fromARGB(200, 255, 255, 255),
                             fontSize: 20,
                           ),
                         ),
@@ -123,13 +123,13 @@ class DashboardScreen extends StatelessWidget {
                           padding: EdgeInsets.all(8.0),
                           child: Icon(
                             Icons.query_stats,
-                            color: Color.fromARGB(255, 255, 255, 255),
+                            color: Color.fromARGB(200, 255, 255, 255),
                           ),
                         ),
                         Text(
                           'Statistics',
                           style: TextStyle(
-                            color: Color.fromARGB(255, 255, 255, 255),
+                            color: Color.fromARGB(200, 255, 255, 255),
                             fontSize: 20,
                           ),
                         ),
@@ -148,13 +148,13 @@ class DashboardScreen extends StatelessWidget {
                           padding: EdgeInsets.all(8.0),
                           child: Icon(
                             Icons.library_books_rounded,
-                            color: Color.fromARGB(255, 255, 255, 255),
+                            color: Color.fromARGB(200, 255, 255, 255),
                           ),
                         ),
                         Text(
                           'Class',
                           style: TextStyle(
-                            color: Color.fromARGB(255, 255, 255, 255),
+                            color: Color.fromARGB(200, 255, 255, 255),
                             fontSize: 20,
                           ),
                         ),
@@ -173,13 +173,13 @@ class DashboardScreen extends StatelessWidget {
                           padding: EdgeInsets.all(8.0),
                           child: Icon(
                             Icons.notifications,
-                            color: Color.fromARGB(255, 255, 255, 255),
+                            color: Color.fromARGB(200, 255, 255, 255),
                           ),
                         ),
                         Text(
                           'Notification',
                           style: TextStyle(
-                            color: Color.fromARGB(255, 255, 255, 255),
+                            color: Color.fromARGB(200, 255, 255, 255),
                             fontSize: 20,
                           ),
                         ),
@@ -256,6 +256,27 @@ class DashboardScreen extends StatelessWidget {
                               Icons.account_circle_rounded,
                               color: Color.fromARGB(255, 29, 100, 244),
                             ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Container(
+                            height: 650,
+                            width: 300,
+                            color: const Color.fromARGB(20, 0, 0, 0),
+                          ),
+                          const SizedBox(
+                            width: 10,
+                          ),
+                          Container(
+                            height: 650,
+                            width: 300,
+                            color: const Color.fromARGB(20, 0, 0, 0),
                           ),
                         ],
                       ),

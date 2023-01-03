@@ -304,6 +304,13 @@ class ClassScreen extends StatelessWidget {
                                   ),
                                 ),
                                 Text(
+                                  'Date: January 29 2023',
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    color: Color.fromARGB(255, 3, 4, 85),
+                                  ),
+                                ),
+                                Text(
                                   'Time: 11:00 am to 12:30 pm',
                                   style: TextStyle(
                                     fontSize: 14,
@@ -347,6 +354,13 @@ class ClassScreen extends StatelessWidget {
                                 ),
                                 Text(
                                   'By: Pico Iyer',
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    color: Color.fromARGB(255, 3, 4, 85),
+                                  ),
+                                ),
+                                Text(
+                                  'Date: January 25 2023',
                                   style: TextStyle(
                                     fontSize: 14,
                                     color: Color.fromARGB(255, 3, 4, 85),
@@ -409,6 +423,13 @@ class ClassScreen extends StatelessWidget {
                                   ),
                                 ),
                                 Text(
+                                  'Date: January 20 2023',
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    color: Color.fromARGB(255, 3, 4, 85),
+                                  ),
+                                ),
+                                Text(
                                   'Location: Camp 21',
                                   style: TextStyle(
                                     fontSize: 14,
@@ -459,6 +480,13 @@ class ClassScreen extends StatelessWidget {
                                 ),
                                 Text(
                                   'By:  Yuval Noah Harari',
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    color: Color.fromARGB(255, 3, 4, 85),
+                                  ),
+                                ),
+                                Text(
+                                  'Date: January 15 2023',
                                   style: TextStyle(
                                     fontSize: 14,
                                     color: Color.fromARGB(255, 3, 4, 85),

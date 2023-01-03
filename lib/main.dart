@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:refuge_ngo/ui/screens/class_screen.dart';
+import 'package:refuge_ngo/ui/screens/classsec_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const ClassScreen(),
+      home: const ClasssecScreen(),
     );
   }
 }

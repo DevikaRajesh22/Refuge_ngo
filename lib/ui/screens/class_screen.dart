@@ -262,193 +262,254 @@ class ClassScreen extends StatelessWidget {
                       const SizedBox(
                         height: 50,
                       ),
-                      const Text(
-                        'Notifications',
-                        style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0),
-                          fontWeight: FontWeight.bold,
-                          fontSize: 22,
+                      Container(
+                        height: 100,
+                        width: 600,
+                        color: const Color.fromARGB(20, 0, 0, 0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            const Padding(
+                              padding: EdgeInsets.all(8.0),
+                              child: Icon(
+                                Icons.account_circle_rounded,
+                                size: 70,
+                                color: Color.fromARGB(255, 3, 4, 85),
+                              ),
+                            ),
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: const [
+                                Text(
+                                  'Topic: Go ahead, Dream about the future',
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold,
+                                    color: Color.fromARGB(255, 3, 4, 85),
+                                  ),
+                                ),
+                                Text(
+                                  'By: Charlie Jane Anders',
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    color: Color.fromARGB(255, 3, 4, 85),
+                                  ),
+                                ),
+                                Text(
+                                  'Location: Camp 45',
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    color: Color.fromARGB(255, 3, 4, 85),
+                                  ),
+                                ),
+                                Text(
+                                  'Time: 11:00 am to 12:30 pm',
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    color: Color.fromARGB(255, 3, 4, 85),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
                         ),
                       ),
                       const SizedBox(
-                        height: 30,
+                        height: 10,
                       ),
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          const Padding(
-                            padding: EdgeInsets.all(8.0),
-                            child: Icon(
-                              Icons.circle_rounded,
-                              color: Color.fromARGB(255, 84, 133, 234),
-                              size: 8,
+                      Container(
+                        height: 100,
+                        width: 600,
+                        color: const Color.fromARGB(20, 0, 0, 0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            const Padding(
+                              padding: EdgeInsets.all(8.0),
+                              child: Icon(
+                                Icons.account_circle_rounded,
+                                size: 70,
+                                color: Color.fromARGB(255, 3, 4, 85),
+                              ),
                             ),
-                          ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: const [
-                              Text(
-                                'Your password has been successfully changed.',
-                                style: TextStyle(
-                                  fontSize: 18,
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: const [
+                                Text(
+                                  'Topic: The art of stillness',
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold,
+                                    color: Color.fromARGB(255, 3, 4, 85),
+                                  ),
                                 ),
-                              ),
-                              Text(
-                                'july 23,2022 at 09.15 AM',
-                                textAlign: TextAlign.right,
-                                style: TextStyle(
-                                  fontSize: 14,
-                                  color: Color.fromARGB(190, 0, 0, 0),
+                                Text(
+                                  'By: Pico Iyer',
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    color: Color.fromARGB(255, 3, 4, 85),
+                                  ),
                                 ),
-                              ),
-                            ],
-                          ),
-                          const SizedBox(
-                            width: 10,
-                          ),
-                          const Icon(
-                            Icons.lock_rounded,
-                          ),
-                        ],
+                                Text(
+                                  'Location: Camp 32',
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    color: Color.fromARGB(255, 3, 4, 85),
+                                  ),
+                                ),
+                                Text(
+                                  'Time: 11:30 am to 1:00 pm',
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    color: Color.fromARGB(255, 3, 4, 85),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
                       ),
                       const SizedBox(
-                        height: 30,
+                        height: 10,
                       ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          const Padding(
-                            padding: EdgeInsets.all(8.0),
-                            child: Icon(
-                              Icons.circle_rounded,
-                              color: Color.fromARGB(255, 84, 133, 234),
-                              size: 8,
+                      Container(
+                        height: 100,
+                        width: 600,
+                        color: const Color.fromARGB(20, 0, 0, 0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            const Padding(
+                              padding: EdgeInsets.all(8.0),
+                              child: Icon(
+                                Icons.account_circle_rounded,
+                                size: 70,
+                                color: Color.fromARGB(255, 3, 4, 85),
+                              ),
                             ),
-                          ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: const [
-                              Text(
-                                'Government of India funds are ready.',
-                                style: TextStyle(
-                                  fontSize: 18,
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: const [
+                                Text(
+                                  'Topic: Empathy is not endorsement',
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold,
+                                    color: Color.fromARGB(255, 3, 4, 85),
+                                  ),
                                 ),
-                              ),
-                              Text(
-                                'India Jul 22 2022 10:30 AM',
-                                textAlign: TextAlign.right,
-                                style: TextStyle(
-                                  fontSize: 14,
-                                  color: Color.fromARGB(190, 0, 0, 0),
+                                Text(
+                                  'By: Dylan Marron',
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    color: Color.fromARGB(255, 3, 4, 85),
+                                  ),
                                 ),
-                              ),
-                            ],
-                          ),
-                          const SizedBox(
-                            width: 10,
-                          ),
-                          const Icon(
-                            Icons.attach_money_rounded,
-                          ),
-                        ],
+                                Text(
+                                  'Location: Camp 21',
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    color: Color.fromARGB(255, 3, 4, 85),
+                                  ),
+                                ),
+                                Text(
+                                  'Time: 10:00 am to 11:30 pm',
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    color: Color.fromARGB(255, 3, 4, 85),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
                       ),
                       const SizedBox(
-                        height: 30,
+                        height: 10,
                       ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          const Padding(
-                            padding: EdgeInsets.all(8.0),
-                            child: Icon(
-                              Icons.circle_rounded,
-                              color: Color.fromARGB(255, 84, 133, 234),
-                              size: 8,
+                      Container(
+                        height: 100,
+                        width: 600,
+                        color: const Color.fromARGB(20, 0, 0, 0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            const Padding(
+                              padding: EdgeInsets.all(8.0),
+                              child: Icon(
+                                Icons.account_circle_rounded,
+                                size: 70,
+                                color: Color.fromARGB(255, 3, 4, 85),
+                              ),
                             ),
-                          ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: const [
-                              Text(
-                                'Thankyou for booking a class session with us',
-                                style: TextStyle(
-                                  fontSize: 18,
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: const [
+                                Text(
+                                  'Topic: The war in Ukraine could change everything',
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold,
+                                    color: Color.fromARGB(255, 3, 4, 85),
+                                  ),
                                 ),
-                              ),
-                              Text(
-                                'Pico Iyer 21 2022 9:30 PM',
-                                textAlign: TextAlign.right,
-                                style: TextStyle(
-                                  fontSize: 14,
-                                  color: Color.fromARGB(190, 0, 0, 0),
+                                Text(
+                                  'By:  Yuval Noah Harari',
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    color: Color.fromARGB(255, 3, 4, 85),
+                                  ),
                                 ),
-                              ),
-                            ],
-                          ),
-                          const SizedBox(
-                            width: 10,
-                          ),
-                          const Icon(
-                            Icons.library_books,
-                          ),
-                        ],
+                                Text(
+                                  'Location: Camp 12',
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    color: Color.fromARGB(255, 3, 4, 85),
+                                  ),
+                                ),
+                                Text(
+                                  'Time: 11:00 am to 12:30 pm',
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    color: Color.fromARGB(255, 3, 4, 85),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
                       ),
                       const SizedBox(
-                        height: 30,
+                        height: 40,
                       ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          const Padding(
-                            padding: EdgeInsets.all(8.0),
-                            child: Icon(
-                              Icons.circle_rounded,
-                              color: Color.fromARGB(255, 84, 133, 234),
-                              size: 8,
+                      SizedBox(
+                        width: 300,
+                        child: Material(
+                          elevation: 4,
+                          color: const Color.fromARGB(255, 84, 133, 234),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            side: const BorderSide(
+                              color: Color.fromARGB(255, 5, 27, 70),
+                              width: 0.0001,
                             ),
                           ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: const [
-                              Text(
-                                'Camp 45 has requested for food services',
-                                style: TextStyle(
-                                  fontSize: 18,
-                                ),
-                              ),
-                              Text(
-                                'Camp 45 july 21 2022 10:11 AM',
-                                textAlign: TextAlign.right,
-                                style: TextStyle(
-                                  fontSize: 14,
-                                  color: Color.fromARGB(190, 0, 0, 0),
-                                ),
-                              ),
-                            ],
-                          ),
-                          const SizedBox(
-                            width: 10,
-                          ),
-                          const Icon(
-                            Icons.emoji_food_beverage_rounded,
-                          ),
-                        ],
-                      ),
-                      const SizedBox(
-                        height: 30,
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: const [
-                          Text(
-                            'View all notifications',
-                            style: TextStyle(
-                              fontSize: 18,
-                              color: Color.fromARGB(255, 4, 30, 85),
-                              fontWeight: FontWeight.bold,
+                          textStyle: const TextStyle(
+                              color: Color.fromARGB(255, 255, 255, 255)),
+                          child: Padding(
+                            padding: const EdgeInsets.all(10),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: const [
+                                Text('Add'),
+                              ],
                             ),
                           ),
-                        ],
+                        ),
                       ),
                     ],
                   ),

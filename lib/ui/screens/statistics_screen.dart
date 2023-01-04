@@ -259,6 +259,42 @@ class StatisticsScreen extends StatelessWidget {
                           ),
                         ],
                       ),
+                      const SizedBox(
+                        height: 50,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Container(
+                            height: 300,
+                            width: 300,
+                            color: const Color.fromARGB(100, 0, 0, 0),
+                          ),
+                          Container(
+                            height: 300,
+                            width: 300,
+                            color: const Color.fromARGB(100, 0, 0, 0),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Container(
+                            height: 300,
+                            width: 300,
+                            color: const Color.fromARGB(100, 0, 0, 0),
+                          ),
+                          Container(
+                            height: 300,
+                            width: 300,
+                            color: const Color.fromARGB(100, 0, 0, 0),
+                          ),
+                        ],
+                      ),
                       //type
                     ],
                   ),

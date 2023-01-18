@@ -26,10 +26,10 @@ class SignUp extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.white,
+                  Image.asset(
+                    'assets/images/logo.png',
+                    height: 30,
+                    width: 30,
                   ),
                   const SizedBox(
                     height: 10,

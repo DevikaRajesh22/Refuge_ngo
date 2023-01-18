@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:line_icons/line_icons.dart';
 
 class RegisterScreen extends StatelessWidget {
   const RegisterScreen({super.key});
@@ -26,10 +27,10 @@ class RegisterScreen extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.white,
+                  Image.asset(
+                    'assets/images/logo.png',
+                    height: 90,
+                    width: 90,
                   ),
                   const SizedBox(
                     height: 10,
@@ -83,12 +84,12 @@ class RegisterScreen extends StatelessWidget {
                         size: 30,
                       ),
                       Icon(
-                        Icons.facebook_rounded,
+                        LineIcons.instagram,
                         color: Color.fromARGB(220, 255, 255, 255),
                         size: 30,
                       ),
                       Icon(
-                        Icons.facebook_rounded,
+                        LineIcons.linkedinIn,
                         color: Color.fromARGB(220, 255, 255, 255),
                         size: 30,
                       ),
@@ -135,7 +136,7 @@ class RegisterScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       const SizedBox(
-                        height: 20,
+                        height: 40,
                       ),
                       const Text(
                         'Information about your organisation',
@@ -146,7 +147,7 @@ class RegisterScreen extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(
-                        height: 50,
+                        height: 60,
                       ),
                       const TextField(
                         decoration: InputDecoration(
@@ -156,7 +157,7 @@ class RegisterScreen extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(
-                        height: 10,
+                        height: 15,
                       ),
                       const TextField(
                         decoration: InputDecoration(
@@ -166,7 +167,7 @@ class RegisterScreen extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(
-                        height: 10,
+                        height: 15,
                       ),
                       const TextField(
                         decoration: InputDecoration(
@@ -176,7 +177,7 @@ class RegisterScreen extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(
-                        height: 10,
+                        height: 15,
                       ),
                       const TextField(
                         decoration: InputDecoration(
@@ -186,7 +187,7 @@ class RegisterScreen extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(
-                        height: 10,
+                        height: 15,
                       ),
                       const TextField(
                         decoration: InputDecoration(
@@ -196,7 +197,7 @@ class RegisterScreen extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(
-                        height: 10,
+                        height: 15,
                       ),
                       const TextField(
                         decoration: InputDecoration(
@@ -211,7 +212,7 @@ class RegisterScreen extends StatelessWidget {
                       SizedBox(
                         width: 400,
                         child: Material(
-                          elevation: 4,
+                          elevation: 7,
                           color: const Color.fromARGB(255, 62, 111, 206),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10),

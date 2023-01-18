@@ -117,7 +117,7 @@ class LoginScreen extends StatelessWidget {
                         children: const [
                           Expanded(
                             child: Divider(
-                              color: Colors.black,
+                              color: Color.fromARGB(105, 0, 0, 0),
                               height: 3,
                             ),
                           ),
@@ -135,7 +135,7 @@ class LoginScreen extends StatelessWidget {
                           ),
                           Expanded(
                             child: Divider(
-                              color: Colors.black,
+                              color: Color.fromARGB(105, 0, 0, 0),
                               height: 3,
                             ),
                           ),

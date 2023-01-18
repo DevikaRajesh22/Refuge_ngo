@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:line_icons/line_icons.dart';
 
-class SignUp extends StatelessWidget {
-  const SignUp({super.key});
+class SignupScreen extends StatelessWidget {
+  const SignupScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -28,8 +29,8 @@ class SignUp extends StatelessWidget {
                 children: [
                   Image.asset(
                     'assets/images/logo.png',
-                    height: 30,
-                    width: 30,
+                    height: 90,
+                    width: 90,
                   ),
                   const SizedBox(
                     height: 10,
@@ -83,12 +84,12 @@ class SignUp extends StatelessWidget {
                         size: 30,
                       ),
                       Icon(
-                        Icons.facebook_rounded,
+                        LineIcons.instagram,
                         color: Color.fromARGB(220, 255, 255, 255),
                         size: 30,
                       ),
                       Icon(
-                        Icons.facebook_rounded,
+                        LineIcons.linkedinIn,
                         color: Color.fromARGB(220, 255, 255, 255),
                         size: 30,
                       ),
@@ -209,11 +210,37 @@ class SignUp extends StatelessWidget {
                       const SizedBox(
                         height: 15,
                       ),
-                      const Text(
-                        'OR',
-                        style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.w500,
+                      SizedBox(
+                        width: 300,
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: const [
+                            Expanded(
+                              child: Divider(
+                                color: Color.fromARGB(105, 0, 0, 0),
+                                height: 3,
+                              ),
+                            ),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Text(
+                              'or',
+                              style: TextStyle(
+                                fontSize: 18,
+                              ),
+                            ),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Expanded(
+                              child: Divider(
+                                color: Color.fromARGB(105, 0, 0, 0),
+                                height: 3,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                       const SizedBox(

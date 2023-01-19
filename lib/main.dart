@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:refuge_ngo/ui/screens/register_screen.dart';
+import 'package:refuge_ngo/ui/screens/login_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,12 +10,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const RegisterScreen(),
+      home: LoginScreen(),
     );
   }
 }

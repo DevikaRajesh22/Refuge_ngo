@@ -71,7 +71,7 @@ class SignupScreen extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(
-                    height: 10,
+                    height: 20,
                   ),
                   Wrap(
                     spacing: 15,

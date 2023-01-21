@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({super.key});
@@ -29,23 +30,23 @@ class DashboardScreen extends StatelessWidget {
                   const SizedBox(
                     height: 35,
                   ),
-                  const Text(
+                  Text(
                     'REFUGE',
-                    style: TextStyle(
-                      fontSize: 33,
+                    style: GoogleFonts.inriaSerif(
+                      fontSize: 30,
                       fontWeight: FontWeight.bold,
-                      color: Color.fromARGB(255, 255, 255, 255),
+                      color: const Color.fromARGB(255, 255, 255, 255),
                     ),
                   ),
                   const SizedBox(
                     height: 60,
                   ),
                   SizedBox(
-                    width: 140,
+                    width: 150,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
-                      children: const [
-                        Padding(
+                      children: [
+                        const Padding(
                           padding: EdgeInsets.all(8.0),
                           child: Icon(
                             Icons.dashboard_sharp,
@@ -54,109 +55,9 @@ class DashboardScreen extends StatelessWidget {
                         ),
                         Text(
                           'Dashboard',
-                          style: TextStyle(
-                            color: Color.fromARGB(255, 255, 255, 255),
-                            fontSize: 20,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 15,
-                  ),
-                  SizedBox(
-                    width: 140,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: const [
-                        Padding(
-                          padding: EdgeInsets.all(8.0),
-                          child: Icon(
-                            Icons.account_circle_rounded,
-                            color: Color.fromARGB(200, 255, 255, 255),
-                          ),
-                        ),
-                        Text(
-                          'Profile',
-                          style: TextStyle(
-                            color: Color.fromARGB(200, 255, 255, 255),
-                            fontSize: 20,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 15,
-                  ),
-                  SizedBox(
-                    width: 140,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: const [
-                        Padding(
-                          padding: EdgeInsets.all(8.0),
-                          child: Icon(
-                            Icons.location_on,
-                            color: Color.fromARGB(200, 255, 255, 255),
-                          ),
-                        ),
-                        Text(
-                          'Map',
-                          style: TextStyle(
-                            color: Color.fromARGB(200, 255, 255, 255),
-                            fontSize: 20,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 15,
-                  ),
-                  SizedBox(
-                    width: 140,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: const [
-                        Padding(
-                          padding: EdgeInsets.all(8.0),
-                          child: Icon(
-                            Icons.query_stats,
-                            color: Color.fromARGB(200, 255, 255, 255),
-                          ),
-                        ),
-                        Text(
-                          'Statistics',
-                          style: TextStyle(
-                            color: Color.fromARGB(200, 255, 255, 255),
-                            fontSize: 20,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 15,
-                  ),
-                  SizedBox(
-                    width: 140,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: const [
-                        Padding(
-                          padding: EdgeInsets.all(8.0),
-                          child: Icon(
-                            Icons.library_books_rounded,
-                            color: Color.fromARGB(200, 255, 255, 255),
-                          ),
-                        ),
-                        Text(
-                          'Class',
-                          style: TextStyle(
-                            color: Color.fromARGB(200, 255, 255, 255),
-                            fontSize: 20,
+                          style: GoogleFonts.inriaSans(
+                            color: const Color.fromARGB(255, 255, 255, 255),
+                            fontSize: 22,
                           ),
                         ),
                       ],
@@ -169,8 +70,108 @@ class DashboardScreen extends StatelessWidget {
                     width: 150,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
-                      children: const [
-                        Padding(
+                      children: [
+                        const Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Icon(
+                            Icons.account_circle_rounded,
+                            color: Color.fromARGB(200, 255, 255, 255),
+                          ),
+                        ),
+                        Text(
+                          'Profile',
+                          style: GoogleFonts.inriaSans(
+                            color: const Color.fromARGB(200, 255, 255, 255),
+                            fontSize: 22,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 15,
+                  ),
+                  SizedBox(
+                    width: 150,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        const Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Icon(
+                            Icons.location_on,
+                            color: Color.fromARGB(200, 255, 255, 255),
+                          ),
+                        ),
+                        Text(
+                          'Map',
+                          style: GoogleFonts.inriaSans(
+                            color: const Color.fromARGB(200, 255, 255, 255),
+                            fontSize: 22,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 15,
+                  ),
+                  SizedBox(
+                    width: 150,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        const Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Icon(
+                            Icons.query_stats,
+                            color: Color.fromARGB(200, 255, 255, 255),
+                          ),
+                        ),
+                        Text(
+                          'Statistics',
+                          style: GoogleFonts.inriaSans(
+                            color: const Color.fromARGB(200, 255, 255, 255),
+                            fontSize: 22,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 15,
+                  ),
+                  SizedBox(
+                    width: 150,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        const Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Icon(
+                            Icons.library_books_rounded,
+                            color: Color.fromARGB(200, 255, 255, 255),
+                          ),
+                        ),
+                        Text(
+                          'Class',
+                          style: GoogleFonts.inriaSans(
+                            color: const Color.fromARGB(200, 255, 255, 255),
+                            fontSize: 22,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 15,
+                  ),
+                  SizedBox(
+                    width: 160,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        const Padding(
                           padding: EdgeInsets.all(8.0),
                           child: Icon(
                             Icons.notifications,
@@ -179,9 +180,9 @@ class DashboardScreen extends StatelessWidget {
                         ),
                         Text(
                           'Notification',
-                          style: TextStyle(
-                            color: Color.fromARGB(200, 255, 255, 255),
-                            fontSize: 20,
+                          style: GoogleFonts.inriaSans(
+                            color: const Color.fromARGB(200, 255, 255, 255),
+                            fontSize: 22,
                           ),
                         ),
                       ],
@@ -191,11 +192,11 @@ class DashboardScreen extends StatelessWidget {
                     height: 250,
                   ),
                   SizedBox(
-                    width: 140,
+                    width: 150,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
-                      children: const [
-                        Padding(
+                      children: [
+                        const Padding(
                           padding: EdgeInsets.all(8.0),
                           child: Icon(
                             Icons.logout_rounded,
@@ -204,9 +205,9 @@ class DashboardScreen extends StatelessWidget {
                         ),
                         Text(
                           'Logout',
-                          style: TextStyle(
-                            color: Color.fromARGB(220, 255, 255, 255),
-                            fontSize: 15,
+                          style: GoogleFonts.inriaSans(
+                            color: const Color.fromARGB(220, 255, 255, 255),
+                            fontSize: 16,
                           ),
                         ),
                       ],
@@ -273,7 +274,9 @@ class DashboardScreen extends StatelessWidget {
                               color: Colors.white,
                               child: Padding(
                                 padding: const EdgeInsets.symmetric(
-                                    horizontal: 20, vertical: 15),
+                                  horizontal: 20,
+                                  vertical: 15,
+                                ),
                                 child: Column(
                                   children: [
                                     const SizedBox(
@@ -438,27 +441,31 @@ class DashboardScreen extends StatelessWidget {
                               ),
                             ),
                             const SizedBox(
-                              height: 10,
+                              height: 40,
                             ),
-                            Material(
-                              elevation: 4,
-                              color: const Color.fromARGB(255, 84, 133, 234),
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(10),
-                                side: const BorderSide(
-                                  color: Color.fromARGB(255, 5, 27, 70),
-                                  width: 0.0001,
+                            SizedBox(
+                              width: 90,
+                              child: Material(
+                                elevation: 4,
+                                color: const Color.fromARGB(255, 84, 133, 234),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10),
+                                  side: const BorderSide(
+                                    color: Color.fromARGB(255, 5, 27, 70),
+                                    width: 0.0001,
+                                  ),
                                 ),
-                              ),
-                              textStyle: const TextStyle(
-                                  color: Color.fromARGB(255, 255, 255, 255)),
-                              child: Padding(
-                                padding: const EdgeInsets.all(10),
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: const [
-                                    Text('Add'),
-                                  ],
+                                textStyle: const TextStyle(
+                                  color: Color.fromARGB(255, 255, 255, 255),
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(10),
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: const [
+                                      Text('Add'),
+                                    ],
+                                  ),
                                 ),
                               ),
                             ),

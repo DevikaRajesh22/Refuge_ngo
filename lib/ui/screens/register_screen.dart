@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class RegisterScreen extends StatelessWidget {
   const RegisterScreen({super.key});
@@ -35,44 +36,43 @@ class RegisterScreen extends StatelessWidget {
                   const SizedBox(
                     height: 10,
                   ),
-                  const Text(
+                  Text(
                     "REFUGE",
                     textAlign: TextAlign.left,
-                    style: TextStyle(
-                      color: Color.fromARGB(220, 255, 255, 255),
-                      fontSize: 35,
-                      fontWeight: FontWeight.w700,
+                    style: GoogleFonts.inriaSerif(
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                      color: const Color.fromARGB(220, 255, 255, 255),
                     ),
                   ),
                   const SizedBox(
                     height: 225,
                   ),
-                  const Text(
+                  Text(
                     "We are for you",
                     textAlign: TextAlign.left,
-                    style: TextStyle(
-                      color: Color.fromARGB(220, 255, 255, 255),
-                      fontSize: 23,
-                      fontWeight: FontWeight.w500,
+                    style: GoogleFonts.inriaSans(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: const Color.fromARGB(220, 255, 255, 255),
                     ),
                   ),
                   const SizedBox(
                     height: 10,
                   ),
-                  const SizedBox(
+                  SizedBox(
                     width: 340,
                     child: Text(
                       'No matter where you are, you deserve love, respect, and kindness. And we make sure you receive our best services...',
                       textAlign: TextAlign.left,
-                      style: TextStyle(
-                        color: Color.fromARGB(220, 255, 255, 255),
-                        fontSize: 17,
-                        fontWeight: FontWeight.normal,
+                      style: GoogleFonts.inriaSans(
+                        fontSize: 15,
+                        color: const Color.fromARGB(220, 255, 255, 255),
                       ),
                     ),
                   ),
                   const SizedBox(
-                    height: 10,
+                    height: 20,
                   ),
                   Wrap(
                     spacing: 15,
@@ -101,24 +101,27 @@ class RegisterScreen extends StatelessWidget {
                   Wrap(
                     spacing: 15,
                     crossAxisAlignment: WrapCrossAlignment.start,
-                    children: const [
+                    children: [
                       Text(
                         'Privacy policy',
-                        style: TextStyle(
-                            fontSize: 13,
-                            color: Color.fromARGB(220, 255, 255, 255)),
+                        style: GoogleFonts.inriaSans(
+                          fontSize: 13,
+                          color: const Color.fromARGB(220, 255, 255, 255),
+                        ),
                       ),
                       Text(
                         'Contact',
-                        style: TextStyle(
-                            fontSize: 13,
-                            color: Color.fromARGB(220, 255, 255, 255)),
+                        style: GoogleFonts.inriaSans(
+                          fontSize: 13,
+                          color: const Color.fromARGB(220, 255, 255, 255),
+                        ),
                       ),
                       Text(
                         '@2023 refuge',
-                        style: TextStyle(
-                            fontSize: 13,
-                            color: Color.fromARGB(220, 255, 255, 255)),
+                        style: GoogleFonts.inriaSans(
+                          fontSize: 13,
+                          color: const Color.fromARGB(220, 255, 255, 255),
+                        ),
                       ),
                     ], //children
                   ),
@@ -138,12 +141,12 @@ class RegisterScreen extends StatelessWidget {
                       const SizedBox(
                         height: 40,
                       ),
-                      const Text(
-                        'Information about your organisation',
-                        style: TextStyle(
+                      Text(
+                        'INFORMATION ABOUT YOUR ORGANISATION',
+                        style: GoogleFonts.inriaSans(
                           fontSize: 29,
-                          fontWeight: FontWeight.w400,
-                          color: Color.fromARGB(255, 62, 111, 206),
+                          fontWeight: FontWeight.bold,
+                          color: const Color.fromARGB(255, 62, 111, 206),
                         ),
                       ),
                       const SizedBox(

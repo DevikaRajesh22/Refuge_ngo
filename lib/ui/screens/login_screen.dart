@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -29,13 +30,12 @@ class LoginScreen extends StatelessWidget {
                       const SizedBox(
                         height: 150,
                       ),
-                      const Text(
+                      Text(
                         'WELCOME TO REFUGE',
-                        style: TextStyle(
-                          fontSize: 25,
-                          fontWeight: FontWeight.bold,
-                          color: Color.fromARGB(255, 62, 111, 206),
-                        ),
+                        style: GoogleFonts.inriaSans(
+                            fontSize: 40,
+                            fontWeight: FontWeight.bold,
+                            color: const Color.fromARGB(255, 62, 111, 209)),
                       ),
                       const SizedBox(
                         height: 50,
@@ -72,13 +72,14 @@ class LoginScreen extends StatelessWidget {
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
-                        children: const [
+                        children: [
                           Text(
                             'Forgot password?',
                             textAlign: TextAlign.right,
-                            style: TextStyle(
+                            style: GoogleFonts.inriaSans(
                               fontSize: 15,
-                              color: Color.fromARGB(255, 100, 147, 241),
+                              fontWeight: FontWeight.bold,
+                              color: const Color.fromARGB(255, 51, 113, 239),
                             ),
                           ),
                         ],

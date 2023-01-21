@@ -450,7 +450,7 @@ class DashboardScreen extends StatelessWidget {
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(10),
                                   side: const BorderSide(
-                                    color: Color.fromARGB(255, 5, 27, 70),
+                                    color: Color.fromARGB(255, 3, 4, 94),
                                     width: 0.0001,
                                   ),
                                 ),

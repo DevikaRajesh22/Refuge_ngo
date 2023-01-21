@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -28,23 +29,23 @@ class ProfileScreen extends StatelessWidget {
                   const SizedBox(
                     height: 35,
                   ),
-                  const Text(
+                  Text(
                     'REFUGE',
-                    style: TextStyle(
-                      fontSize: 33,
+                    style: GoogleFonts.inriaSerif(
+                      fontSize: 30,
                       fontWeight: FontWeight.bold,
-                      color: Color.fromARGB(255, 255, 255, 255),
+                      color: const Color.fromARGB(255, 255, 255, 255),
                     ),
                   ),
                   const SizedBox(
                     height: 60,
                   ),
                   SizedBox(
-                    width: 140,
+                    width: 150,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
-                      children: const [
-                        Padding(
+                      children: [
+                        const Padding(
                           padding: EdgeInsets.all(8.0),
                           child: Icon(
                             Icons.dashboard_sharp,
@@ -53,109 +54,9 @@ class ProfileScreen extends StatelessWidget {
                         ),
                         Text(
                           'Dashboard',
-                          style: TextStyle(
-                            color: Color.fromARGB(200, 255, 255, 255),
-                            fontSize: 20,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 15,
-                  ),
-                  SizedBox(
-                    width: 140,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: const [
-                        Padding(
-                          padding: EdgeInsets.all(8.0),
-                          child: Icon(
-                            Icons.account_circle_rounded,
-                            color: Color.fromARGB(255, 255, 255, 255),
-                          ),
-                        ),
-                        Text(
-                          'Profile',
-                          style: TextStyle(
-                            color: Color.fromARGB(255, 255, 255, 255),
-                            fontSize: 20,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 15,
-                  ),
-                  SizedBox(
-                    width: 140,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: const [
-                        Padding(
-                          padding: EdgeInsets.all(8.0),
-                          child: Icon(
-                            Icons.location_on,
-                            color: Color.fromARGB(200, 255, 255, 255),
-                          ),
-                        ),
-                        Text(
-                          'Map',
-                          style: TextStyle(
-                            color: Color.fromARGB(200, 255, 255, 255),
-                            fontSize: 20,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 15,
-                  ),
-                  SizedBox(
-                    width: 140,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: const [
-                        Padding(
-                          padding: EdgeInsets.all(8.0),
-                          child: Icon(
-                            Icons.query_stats,
-                            color: Color.fromARGB(200, 255, 255, 255),
-                          ),
-                        ),
-                        Text(
-                          'Statistics',
-                          style: TextStyle(
-                            color: Color.fromARGB(200, 255, 255, 255),
-                            fontSize: 20,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 15,
-                  ),
-                  SizedBox(
-                    width: 140,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: const [
-                        Padding(
-                          padding: EdgeInsets.all(8.0),
-                          child: Icon(
-                            Icons.library_books_rounded,
-                            color: Color.fromARGB(200, 255, 255, 255),
-                          ),
-                        ),
-                        Text(
-                          'Class',
-                          style: TextStyle(
-                            color: Color.fromARGB(200, 255, 255, 255),
-                            fontSize: 20,
+                          style: GoogleFonts.inriaSans(
+                            color: const Color.fromARGB(200, 255, 255, 255),
+                            fontSize: 22,
                           ),
                         ),
                       ],
@@ -168,8 +69,108 @@ class ProfileScreen extends StatelessWidget {
                     width: 150,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
-                      children: const [
-                        Padding(
+                      children: [
+                        const Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Icon(
+                            Icons.account_circle_rounded,
+                            color: Color.fromARGB(255, 255, 255, 255),
+                          ),
+                        ),
+                        Text(
+                          'Profile',
+                          style: GoogleFonts.inriaSans(
+                            color: const Color.fromARGB(255, 255, 255, 255),
+                            fontSize: 22,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 15,
+                  ),
+                  SizedBox(
+                    width: 150,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        const Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Icon(
+                            Icons.location_on,
+                            color: Color.fromARGB(200, 255, 255, 255),
+                          ),
+                        ),
+                        Text(
+                          'Map',
+                          style: GoogleFonts.inriaSans(
+                            color: const Color.fromARGB(200, 255, 255, 255),
+                            fontSize: 22,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 15,
+                  ),
+                  SizedBox(
+                    width: 150,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        const Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Icon(
+                            Icons.query_stats,
+                            color: Color.fromARGB(200, 255, 255, 255),
+                          ),
+                        ),
+                        Text(
+                          'Statistics',
+                          style: GoogleFonts.inriaSans(
+                            color: const Color.fromARGB(200, 255, 255, 255),
+                            fontSize: 22,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 15,
+                  ),
+                  SizedBox(
+                    width: 150,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        const Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Icon(
+                            Icons.library_books_rounded,
+                            color: Color.fromARGB(200, 255, 255, 255),
+                          ),
+                        ),
+                        Text(
+                          'Class',
+                          style: GoogleFonts.inriaSans(
+                            color: const Color.fromARGB(200, 255, 255, 255),
+                            fontSize: 22,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 15,
+                  ),
+                  SizedBox(
+                    width: 160,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        const Padding(
                           padding: EdgeInsets.all(8.0),
                           child: Icon(
                             Icons.notifications,
@@ -178,9 +179,9 @@ class ProfileScreen extends StatelessWidget {
                         ),
                         Text(
                           'Notification',
-                          style: TextStyle(
-                            color: Color.fromARGB(200, 255, 255, 255),
-                            fontSize: 20,
+                          style: GoogleFonts.inriaSans(
+                            color: const Color.fromARGB(200, 255, 255, 255),
+                            fontSize: 22,
                           ),
                         ),
                       ],
@@ -193,8 +194,8 @@ class ProfileScreen extends StatelessWidget {
                     width: 140,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
-                      children: const [
-                        Padding(
+                      children: [
+                        const Padding(
                           padding: EdgeInsets.all(8.0),
                           child: Icon(
                             Icons.logout_rounded,
@@ -203,9 +204,9 @@ class ProfileScreen extends StatelessWidget {
                         ),
                         Text(
                           'Logout',
-                          style: TextStyle(
-                            color: Color.fromARGB(220, 255, 255, 255),
-                            fontSize: 15,
+                          style: GoogleFonts.inriaSans(
+                            color: const Color.fromARGB(220, 255, 255, 255),
+                            fontSize: 16,
                           ),
                         ),
                       ],
@@ -262,10 +263,10 @@ class ProfileScreen extends StatelessWidget {
                       const SizedBox(
                         height: 30,
                       ),
-                      const Text(
+                      Text(
                         'CAPSTONE MINISTRIES',
-                        style: TextStyle(
-                          color: Color.fromARGB(255, 29, 100, 244),
+                        style: GoogleFonts.inriaSans(
+                          color: const Color.fromARGB(255, 29, 100, 244),
                           fontWeight: FontWeight.w600,
                           fontSize: 30,
                         ),
@@ -291,20 +292,20 @@ class ProfileScreen extends StatelessWidget {
                           ),
                         ],
                       ),
-                      const Text(
+                      Text(
                         '4 Stars',
-                        style: TextStyle(
-                          color: Color.fromARGB(100, 0, 0, 0),
+                        style: GoogleFonts.inriaSans(
+                          color: const Color.fromARGB(100, 0, 0, 0),
                           fontWeight: FontWeight.bold,
                         ),
                       ),
                       const SizedBox(
                         height: 50,
                       ),
-                      const Text(
+                      Text(
                         'CONTACT DETAILS',
-                        style: TextStyle(
-                          color: Color.fromARGB(255, 29, 100, 244),
+                        style: GoogleFonts.inriaSans(
+                          color: const Color.fromARGB(255, 29, 100, 244),
                           fontWeight: FontWeight.w600,
                           fontSize: 20,
                         ),
@@ -313,110 +314,110 @@ class ProfileScreen extends StatelessWidget {
                         height: 20,
                       ),
                       Row(
-                        children: const [
+                        children: [
                           Text(
                             'ADDRESS :',
-                            style: TextStyle(
-                              color: Color.fromARGB(200, 0, 0, 0),
+                            style: GoogleFonts.inriaSans(
+                              color: const Color.fromARGB(200, 0, 0, 0),
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 5,
                           ),
                           Text(
                             'H.No: 1615, Ward No.23 BirdLine',
-                            style: TextStyle(
-                              color: Color.fromARGB(200, 0, 0, 0),
+                            style: GoogleFonts.inriaSans(
+                              color: const Color.fromARGB(200, 0, 0, 0),
                               fontSize: 18,
                             ),
                           ),
                         ],
                       ),
                       Row(
-                        children: const [
+                        children: [
                           Text(
                             'CITY :',
-                            style: TextStyle(
-                              color: Color.fromARGB(200, 0, 0, 0),
+                            style: GoogleFonts.inriaSans(
+                              color: const Color.fromARGB(200, 0, 0, 0),
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 5,
                           ),
                           Text(
                             'South Andaman',
-                            style: TextStyle(
-                              color: Color.fromARGB(200, 0, 0, 0),
+                            style: GoogleFonts.inriaSans(
+                              color: const Color.fromARGB(200, 0, 0, 0),
                               fontSize: 18,
                             ),
                           ),
                         ],
                       ),
                       Row(
-                        children: const [
+                        children: [
                           Text(
                             'STATE :',
-                            style: TextStyle(
-                              color: Color.fromARGB(200, 0, 0, 0),
+                            style: GoogleFonts.inriaSans(
+                              color: const Color.fromARGB(200, 0, 0, 0),
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 5,
                           ),
                           Text(
                             'Andaman & Nicobar Islands',
-                            style: TextStyle(
-                              color: Color.fromARGB(200, 0, 0, 0),
+                            style: GoogleFonts.inriaSans(
+                              color: const Color.fromARGB(200, 0, 0, 0),
                               fontSize: 18,
                             ),
                           ),
                         ],
                       ),
                       Row(
-                        children: const [
+                        children: [
                           Text(
                             'MOBILE NO. :',
-                            style: TextStyle(
-                              color: Color.fromARGB(200, 0, 0, 0),
+                            style: GoogleFonts.inriaSans(
+                              color: const Color.fromARGB(200, 0, 0, 0),
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 5,
                           ),
                           Text(
                             '9933233655',
-                            style: TextStyle(
-                              color: Color.fromARGB(200, 0, 0, 0),
+                            style: GoogleFonts.inriaSans(
+                              color: const Color.fromARGB(200, 0, 0, 0),
                               fontSize: 18,
                             ),
                           ),
                         ],
                       ),
                       Row(
-                        children: const [
+                        children: [
                           Text(
                             'EMAIL :',
-                            style: TextStyle(
-                              color: Color.fromARGB(200, 0, 0, 0),
+                            style: GoogleFonts.inriaSans(
+                              color: const Color.fromARGB(200, 0, 0, 0),
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 5,
                           ),
                           Text(
                             'capstonefamily777@gmail.com',
-                            style: TextStyle(
-                              color: Color.fromARGB(200, 0, 0, 0),
+                            style: GoogleFonts.inriaSans(
+                              color: const Color.fromARGB(200, 0, 0, 0),
                               fontSize: 18,
                             ),
                           ),
@@ -425,10 +426,10 @@ class ProfileScreen extends StatelessWidget {
                       const SizedBox(
                         height: 20,
                       ),
-                      const Text(
+                      Text(
                         'REGISTRATION DETAILS',
-                        style: TextStyle(
-                          color: Color.fromARGB(255, 29, 100, 244),
+                        style: GoogleFonts.inriaSans(
+                          color: const Color.fromARGB(255, 29, 100, 244),
                           fontWeight: FontWeight.w600,
                           fontSize: 20,
                         ),
@@ -437,66 +438,66 @@ class ProfileScreen extends StatelessWidget {
                         height: 20,
                       ),
                       Row(
-                        children: const [
+                        children: [
                           Text(
                             'Type of NGO :',
-                            style: TextStyle(
-                              color: Color.fromARGB(200, 0, 0, 0),
+                            style: GoogleFonts.inriaSans(
+                              color: const Color.fromARGB(200, 0, 0, 0),
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 5,
                           ),
                           Text(
                             'Trust (Non-Government)',
-                            style: TextStyle(
-                              color: Color.fromARGB(200, 0, 0, 0),
+                            style: GoogleFonts.inriaSans(
+                              color: const Color.fromARGB(200, 0, 0, 0),
                               fontSize: 18,
                             ),
                           ),
                         ],
                       ),
                       Row(
-                        children: const [
+                        children: [
                           Text(
                             'Registration No. :',
-                            style: TextStyle(
-                              color: Color.fromARGB(200, 0, 0, 0),
+                            style: GoogleFonts.inriaSans(
+                              color: const Color.fromARGB(200, 0, 0, 0),
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 5,
                           ),
                           Text(
                             '1319',
-                            style: TextStyle(
-                              color: Color.fromARGB(200, 0, 0, 0),
+                            style: GoogleFonts.inriaSans(
+                              color: const Color.fromARGB(200, 0, 0, 0),
                               fontSize: 18,
                             ),
                           ),
                         ],
                       ),
                       Row(
-                        children: const [
+                        children: [
                           Text(
                             'Date of registration:',
-                            style: TextStyle(
-                              color: Color.fromARGB(200, 0, 0, 0),
+                            style: GoogleFonts.inriaSans(
+                              color: const Color.fromARGB(200, 0, 0, 0),
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 5,
                           ),
                           Text(
                             'December 15 2008',
-                            style: TextStyle(
-                              color: Color.fromARGB(200, 0, 0, 0),
+                            style: GoogleFonts.inriaSans(
+                              color: const Color.fromARGB(200, 0, 0, 0),
                               fontSize: 18,
                             ),
                           ),
@@ -505,10 +506,10 @@ class ProfileScreen extends StatelessWidget {
                       const SizedBox(
                         height: 20,
                       ),
-                      const Text(
+                      Text(
                         'AREA OF HELP',
-                        style: TextStyle(
-                          color: Color.fromARGB(255, 29, 100, 244),
+                        style: GoogleFonts.inriaSans(
+                          color: const Color.fromARGB(255, 29, 100, 244),
                           fontWeight: FontWeight.w600,
                           fontSize: 20,
                         ),
@@ -516,10 +517,10 @@ class ProfileScreen extends StatelessWidget {
                       const SizedBox(
                         height: 20,
                       ),
-                      const Text(
+                      Text(
                         'Disaster Management, Children, Education & Literacy, Health & Family Welfare, Nutrition, Science & Technology, Vocational Training, Women\'s development and Empowerement',
-                        style: TextStyle(
-                          color: Color.fromARGB(200, 0, 0, 0),
+                        style: GoogleFonts.inriaSans(
+                          color: const Color.fromARGB(200, 0, 0, 0),
                           fontSize: 18,
                         ),
                       ),
@@ -530,7 +531,7 @@ class ProfileScreen extends StatelessWidget {
                         width: 250,
                         child: Material(
                           elevation: 4,
-                          color: const Color.fromARGB(255, 84, 133, 234),
+                          color: const Color.fromARGB(255, 26, 75, 214),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10),
                             side: const BorderSide(

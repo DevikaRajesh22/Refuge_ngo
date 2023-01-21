@@ -89,7 +89,7 @@ class LoginScreen extends StatelessWidget {
                       ),
                       Material(
                         elevation: 4,
-                        color: const Color.fromARGB(255, 84, 133, 234),
+                        color: const Color.fromARGB(255, 44, 94, 195),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10),
                           side: const BorderSide(
@@ -147,7 +147,7 @@ class LoginScreen extends StatelessWidget {
                       ),
                       Material(
                         elevation: 4,
-                        color: const Color.fromARGB(255, 84, 133, 234),
+                        color: const Color.fromARGB(255, 44, 94, 195),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10),
                           side: const BorderSide(

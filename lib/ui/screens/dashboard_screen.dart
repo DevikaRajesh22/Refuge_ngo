@@ -445,8 +445,8 @@ class DashboardScreen extends StatelessWidget {
                             SizedBox(
                               width: 90,
                               child: Material(
-                                elevation: 4,
-                                color: const Color.fromARGB(255, 84, 133, 234),
+                                elevation: 7,
+                                color: const Color.fromARGB(255, 3, 4, 94),
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(10),
                                   side: const BorderSide(

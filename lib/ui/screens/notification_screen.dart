@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class NotificationScreen extends StatelessWidget {
   const NotificationScreen({super.key});
@@ -28,23 +29,23 @@ class NotificationScreen extends StatelessWidget {
                   const SizedBox(
                     height: 35,
                   ),
-                  const Text(
+                  Text(
                     'REFUGE',
-                    style: TextStyle(
+                    style: GoogleFonts.inriaSerif(
                       fontSize: 33,
                       fontWeight: FontWeight.bold,
-                      color: Color.fromARGB(255, 255, 255, 255),
+                      color: const Color.fromARGB(255, 255, 255, 255),
                     ),
                   ),
                   const SizedBox(
                     height: 60,
                   ),
                   SizedBox(
-                    width: 140,
+                    width: 150,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
-                      children: const [
-                        Padding(
+                      children: [
+                        const Padding(
                           padding: EdgeInsets.all(8.0),
                           child: Icon(
                             Icons.dashboard_sharp,
@@ -53,109 +54,9 @@ class NotificationScreen extends StatelessWidget {
                         ),
                         Text(
                           'Dashboard',
-                          style: TextStyle(
-                            color: Color.fromARGB(200, 255, 255, 255),
-                            fontSize: 20,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 15,
-                  ),
-                  SizedBox(
-                    width: 140,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: const [
-                        Padding(
-                          padding: EdgeInsets.all(8.0),
-                          child: Icon(
-                            Icons.account_circle_rounded,
-                            color: Color.fromARGB(200, 255, 255, 255),
-                          ),
-                        ),
-                        Text(
-                          'Profile',
-                          style: TextStyle(
-                            color: Color.fromARGB(200, 255, 255, 255),
-                            fontSize: 20,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 15,
-                  ),
-                  SizedBox(
-                    width: 140,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: const [
-                        Padding(
-                          padding: EdgeInsets.all(8.0),
-                          child: Icon(
-                            Icons.location_on,
-                            color: Color.fromARGB(200, 255, 255, 255),
-                          ),
-                        ),
-                        Text(
-                          'Map',
-                          style: TextStyle(
-                            color: Color.fromARGB(200, 255, 255, 255),
-                            fontSize: 20,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 15,
-                  ),
-                  SizedBox(
-                    width: 140,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: const [
-                        Padding(
-                          padding: EdgeInsets.all(8.0),
-                          child: Icon(
-                            Icons.query_stats,
-                            color: Color.fromARGB(200, 255, 255, 255),
-                          ),
-                        ),
-                        Text(
-                          'Statistics',
-                          style: TextStyle(
-                            color: Color.fromARGB(200, 255, 255, 255),
-                            fontSize: 20,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 15,
-                  ),
-                  SizedBox(
-                    width: 140,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: const [
-                        Padding(
-                          padding: EdgeInsets.all(8.0),
-                          child: Icon(
-                            Icons.library_books_rounded,
-                            color: Color.fromARGB(200, 255, 255, 255),
-                          ),
-                        ),
-                        Text(
-                          'Class',
-                          style: TextStyle(
-                            color: Color.fromARGB(200, 255, 255, 255),
-                            fontSize: 20,
+                          style: GoogleFonts.inriaSans(
+                            color: const Color.fromARGB(200, 255, 255, 255),
+                            fontSize: 22,
                           ),
                         ),
                       ],
@@ -168,8 +69,108 @@ class NotificationScreen extends StatelessWidget {
                     width: 150,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
-                      children: const [
-                        Padding(
+                      children: [
+                        const Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Icon(
+                            Icons.account_circle_rounded,
+                            color: Color.fromARGB(200, 255, 255, 255),
+                          ),
+                        ),
+                        Text(
+                          'Profile',
+                          style: GoogleFonts.inriaSans(
+                            color: const Color.fromARGB(200, 255, 255, 255),
+                            fontSize: 22,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 15,
+                  ),
+                  SizedBox(
+                    width: 150,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        const Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Icon(
+                            Icons.location_on,
+                            color: Color.fromARGB(200, 255, 255, 255),
+                          ),
+                        ),
+                        Text(
+                          'Map',
+                          style: GoogleFonts.inriaSans(
+                            color: const Color.fromARGB(200, 255, 255, 255),
+                            fontSize: 22,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 15,
+                  ),
+                  SizedBox(
+                    width: 150,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        const Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Icon(
+                            Icons.query_stats,
+                            color: Color.fromARGB(200, 255, 255, 255),
+                          ),
+                        ),
+                        Text(
+                          'Statistics',
+                          style: GoogleFonts.inriaSans(
+                            color: const Color.fromARGB(200, 255, 255, 255),
+                            fontSize: 22,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 15,
+                  ),
+                  SizedBox(
+                    width: 150,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        const Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Icon(
+                            Icons.library_books_rounded,
+                            color: Color.fromARGB(200, 255, 255, 255),
+                          ),
+                        ),
+                        Text(
+                          'Class',
+                          style: GoogleFonts.inriaSans(
+                            color: const Color.fromARGB(200, 255, 255, 255),
+                            fontSize: 22,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 15,
+                  ),
+                  SizedBox(
+                    width: 160,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        const Padding(
                           padding: EdgeInsets.all(8.0),
                           child: Icon(
                             Icons.notifications,
@@ -178,9 +179,9 @@ class NotificationScreen extends StatelessWidget {
                         ),
                         Text(
                           'Notification',
-                          style: TextStyle(
-                            color: Color.fromARGB(255, 255, 255, 255),
-                            fontSize: 20,
+                          style: GoogleFonts.inriaSans(
+                            color: const Color.fromARGB(255, 255, 255, 255),
+                            fontSize: 22,
                           ),
                         ),
                       ],
@@ -190,11 +191,11 @@ class NotificationScreen extends StatelessWidget {
                     height: 250,
                   ),
                   SizedBox(
-                    width: 140,
+                    width: 150,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
-                      children: const [
-                        Padding(
+                      children: [
+                        const Padding(
                           padding: EdgeInsets.all(8.0),
                           child: Icon(
                             Icons.logout_rounded,
@@ -203,9 +204,9 @@ class NotificationScreen extends StatelessWidget {
                         ),
                         Text(
                           'Logout',
-                          style: TextStyle(
-                            color: Color.fromARGB(220, 255, 255, 255),
-                            fontSize: 15,
+                          style: GoogleFonts.inriaSans(
+                            color: const Color.fromARGB(220, 255, 255, 255),
+                            fontSize: 16,
                           ),
                         ),
                       ],
@@ -217,7 +218,6 @@ class NotificationScreen extends StatelessWidget {
             Expanded(
               child: Center(
                 child: SizedBox(
-                  width: 700,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
@@ -265,7 +265,7 @@ class NotificationScreen extends StatelessWidget {
                       const Text(
                         'Notifications',
                         style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0),
+                          color: Color.fromARGB(255, 4, 30, 85),
                           fontWeight: FontWeight.bold,
                           fontSize: 22,
                         ),
@@ -273,182 +273,199 @@ class NotificationScreen extends StatelessWidget {
                       const SizedBox(
                         height: 30,
                       ),
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          const Padding(
-                            padding: EdgeInsets.all(8.0),
-                            child: Icon(
-                              Icons.circle_rounded,
-                              color: Color.fromARGB(255, 84, 133, 234),
-                              size: 8,
+                      SizedBox(
+                        width: 450,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            const Padding(
+                              padding: EdgeInsets.all(8.0),
+                              child: Icon(
+                                Icons.circle_rounded,
+                                color: Color.fromARGB(255, 84, 133, 234),
+                                size: 8,
+                              ),
                             ),
-                          ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: const [
-                              Text(
-                                'Your password has been successfully changed.',
-                                style: TextStyle(
-                                  fontSize: 18,
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: const [
+                                Text(
+                                  'Your password has been successfully changed.',
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                  ),
                                 ),
-                              ),
-                              Text(
-                                'july 23,2022 at 09.15 AM',
-                                textAlign: TextAlign.right,
-                                style: TextStyle(
-                                  fontSize: 14,
-                                  color: Color.fromARGB(190, 0, 0, 0),
+                                Text(
+                                  'july 23,2022 at 09.15 AM',
+                                  textAlign: TextAlign.right,
+                                  style: TextStyle(
+                                      fontSize: 14, color: Colors.black),
                                 ),
-                              ),
-                            ],
-                          ),
-                          const SizedBox(
-                            width: 10,
-                          ),
-                          const Icon(
-                            Icons.lock_rounded,
-                          ),
-                        ],
-                      ),
-                      const SizedBox(
-                        height: 30,
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          const Padding(
-                            padding: EdgeInsets.all(8.0),
-                            child: Icon(
-                              Icons.circle_rounded,
-                              color: Color.fromARGB(255, 84, 133, 234),
-                              size: 8,
+                              ],
                             ),
-                          ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: const [
-                              Text(
-                                'Government of India funds are ready.',
-                                style: TextStyle(
-                                  fontSize: 18,
-                                ),
-                              ),
-                              Text(
-                                'India Jul 22 2022 10:30 AM',
-                                textAlign: TextAlign.right,
-                                style: TextStyle(
-                                  fontSize: 14,
-                                  color: Color.fromARGB(190, 0, 0, 0),
-                                ),
-                              ),
-                            ],
-                          ),
-                          const SizedBox(
-                            width: 10,
-                          ),
-                          const Icon(
-                            Icons.attach_money_rounded,
-                          ),
-                        ],
-                      ),
-                      const SizedBox(
-                        height: 30,
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          const Padding(
-                            padding: EdgeInsets.all(8.0),
-                            child: Icon(
-                              Icons.circle_rounded,
-                              color: Color.fromARGB(255, 84, 133, 234),
-                              size: 8,
+                            const SizedBox(
+                              width: 10,
                             ),
-                          ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: const [
-                              Text(
-                                'Thankyou for booking a class session with us',
-                                style: TextStyle(
-                                  fontSize: 18,
-                                ),
-                              ),
-                              Text(
-                                'Pico Iyer 21 2022 9:30 PM',
-                                textAlign: TextAlign.right,
-                                style: TextStyle(
-                                  fontSize: 14,
-                                  color: Color.fromARGB(190, 0, 0, 0),
-                                ),
-                              ),
-                            ],
-                          ),
-                          const SizedBox(
-                            width: 10,
-                          ),
-                          const Icon(
-                            Icons.library_books,
-                          ),
-                        ],
-                      ),
-                      const SizedBox(
-                        height: 30,
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          const Padding(
-                            padding: EdgeInsets.all(8.0),
-                            child: Icon(
-                              Icons.circle_rounded,
-                              color: Color.fromARGB(255, 84, 133, 234),
-                              size: 8,
-                            ),
-                          ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: const [
-                              Text(
-                                'Camp 45 has requested for food services',
-                                style: TextStyle(
-                                  fontSize: 18,
-                                ),
-                              ),
-                              Text(
-                                'Camp 45 july 21 2022 10:11 AM',
-                                textAlign: TextAlign.right,
-                                style: TextStyle(
-                                  fontSize: 14,
-                                  color: Color.fromARGB(190, 0, 0, 0),
-                                ),
-                              ),
-                            ],
-                          ),
-                          const SizedBox(
-                            width: 10,
-                          ),
-                          const Icon(
-                            Icons.emoji_food_beverage_rounded,
-                          ),
-                        ],
-                      ),
-                      const SizedBox(
-                        height: 30,
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: const [
-                          Text(
-                            'View all notifications',
-                            style: TextStyle(
-                              fontSize: 18,
+                            const Icon(
+                              Icons.lock_rounded,
                               color: Color.fromARGB(255, 4, 30, 85),
-                              fontWeight: FontWeight.bold,
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 30,
+                      ),
+                      SizedBox(
+                        width: 450,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            const Padding(
+                              padding: EdgeInsets.all(8.0),
+                              child: Icon(
+                                Icons.circle_rounded,
+                                color: Color.fromARGB(255, 84, 133, 234),
+                                size: 8,
+                              ),
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: const [
+                                Text(
+                                  'Government of India funds are ready.',
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                  ),
+                                ),
+                                Text(
+                                  'India Jul 22 2022 10:30 AM',
+                                  textAlign: TextAlign.right,
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    color: Color.fromARGB(190, 0, 0, 0),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            const SizedBox(
+                              width: 10,
+                            ),
+                            const Icon(
+                              Icons.attach_money_rounded,
+                              color: Color.fromARGB(255, 4, 30, 85),
+                            ),
+                          ],
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 30,
+                      ),
+                      SizedBox(
+                        width: 450,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            const Padding(
+                              padding: EdgeInsets.all(8.0),
+                              child: Icon(
+                                Icons.circle_rounded,
+                                color: Color.fromARGB(255, 84, 133, 234),
+                                size: 8,
+                              ),
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: const [
+                                Text(
+                                  'Thankyou for booking a class session with us',
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                  ),
+                                ),
+                                Text(
+                                  'Pico Iyer 21 2022 9:30 PM',
+                                  textAlign: TextAlign.right,
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    color: Color.fromARGB(190, 0, 0, 0),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            const SizedBox(
+                              width: 10,
+                            ),
+                            const Icon(
+                              Icons.library_books,
+                              color: Color.fromARGB(255, 4, 30, 85),
+                            ),
+                          ],
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 30,
+                      ),
+                      SizedBox(
+                        width: 450,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            const Padding(
+                              padding: EdgeInsets.all(8.0),
+                              child: Icon(
+                                Icons.circle_rounded,
+                                color: Color.fromARGB(255, 84, 133, 234),
+                                size: 8,
+                              ),
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: const [
+                                Text(
+                                  'Camp 45 has requested for food services',
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                  ),
+                                ),
+                                Text(
+                                  'Camp 45 july 21 2022 10:11 AM',
+                                  textAlign: TextAlign.right,
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    color: Color.fromARGB(190, 0, 0, 0),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            const SizedBox(
+                              width: 10,
+                            ),
+                            const Icon(
+                              Icons.emoji_food_beverage_rounded,
+                              color: Color.fromARGB(255, 4, 30, 85),
+                            ),
+                          ],
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 30,
+                      ),
+                      SizedBox(
+                        width: 450,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: const [
+                            Text(
+                              'View all notifications',
+                              style: TextStyle(
+                                fontSize: 18,
+                                color: Color.fromARGB(255, 4, 30, 85),
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ],
                   ),

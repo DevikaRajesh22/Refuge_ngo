@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class SignupScreen extends StatelessWidget {
   const SignupScreen({super.key});
@@ -35,39 +36,37 @@ class SignupScreen extends StatelessWidget {
                   const SizedBox(
                     height: 10,
                   ),
-                  const Text(
+                  Text(
                     "REFUGE",
                     textAlign: TextAlign.left,
-                    style: TextStyle(
-                      color: Color.fromARGB(220, 255, 255, 255),
-                      fontSize: 35,
-                      fontWeight: FontWeight.w700,
-                    ),
+                    style: GoogleFonts.inriaSerif(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                        color: const Color.fromARGB(220, 255, 255, 255)),
                   ),
                   const SizedBox(
                     height: 225,
                   ),
-                  const Text(
+                  Text(
                     "We are for you",
                     textAlign: TextAlign.left,
-                    style: TextStyle(
-                      color: Color.fromARGB(220, 255, 255, 255),
-                      fontSize: 23,
-                      fontWeight: FontWeight.w500,
+                    style: GoogleFonts.inriaSans(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: const Color.fromARGB(220, 255, 255, 255),
                     ),
                   ),
                   const SizedBox(
                     height: 10,
                   ),
-                  const SizedBox(
+                  SizedBox(
                     width: 340,
                     child: Text(
                       'No matter where you are, you deserve love, respect, and kindness. And we make sure you receive our best services...',
                       textAlign: TextAlign.left,
-                      style: TextStyle(
-                        color: Color.fromARGB(220, 255, 255, 255),
-                        fontSize: 17,
-                        fontWeight: FontWeight.normal,
+                      style: GoogleFonts.inriaSans(
+                        fontSize: 15,
+                        color: const Color.fromARGB(220, 255, 255, 255),
                       ),
                     ),
                   ),
@@ -101,24 +100,27 @@ class SignupScreen extends StatelessWidget {
                   Wrap(
                     spacing: 15,
                     crossAxisAlignment: WrapCrossAlignment.start,
-                    children: const [
+                    children: [
                       Text(
                         'Privacy policy',
-                        style: TextStyle(
-                            fontSize: 13,
-                            color: Color.fromARGB(220, 255, 255, 255)),
+                        style: GoogleFonts.inriaSans(
+                          fontSize: 13,
+                          color: const Color.fromARGB(220, 255, 255, 255),
+                        ),
                       ),
                       Text(
                         'Contact',
-                        style: TextStyle(
-                            fontSize: 13,
-                            color: Color.fromARGB(220, 255, 255, 255)),
+                        style: GoogleFonts.inriaSans(
+                          fontSize: 13,
+                          color: const Color.fromARGB(220, 255, 255, 255),
+                        ),
                       ),
                       Text(
                         '@2023 refuge',
-                        style: TextStyle(
-                            fontSize: 13,
-                            color: Color.fromARGB(220, 255, 255, 255)),
+                        style: GoogleFonts.inriaSans(
+                          fontSize: 13,
+                          color: const Color.fromARGB(220, 255, 255, 255),
+                        ),
                       ),
                     ], //children
                   ),
@@ -138,12 +140,12 @@ class SignupScreen extends StatelessWidget {
                       const SizedBox(
                         height: 100,
                       ),
-                      const Text(
+                      Text(
                         'CREATE YOUR FREE ACCOUNT',
-                        style: TextStyle(
-                          fontSize: 29,
+                        style: GoogleFonts.inriaSans(
+                          fontSize: 30,
                           fontWeight: FontWeight.w600,
-                          color: Color.fromARGB(255, 62, 111, 206),
+                          color: const Color.fromARGB(255, 62, 111, 206),
                         ),
                       ),
                       const SizedBox(
@@ -215,26 +217,26 @@ class SignupScreen extends StatelessWidget {
                         child: Row(
                           mainAxisSize: MainAxisSize.min,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: const [
-                            Expanded(
+                          children: [
+                            const Expanded(
                               child: Divider(
                                 color: Color.fromARGB(105, 0, 0, 0),
                                 height: 3,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 10,
                             ),
                             Text(
                               'or',
-                              style: TextStyle(
+                              style: GoogleFonts.inriaSans(
                                 fontSize: 18,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 10,
                             ),
-                            Expanded(
+                            const Expanded(
                               child: Divider(
                                 color: Color.fromARGB(105, 0, 0, 0),
                                 height: 3,
@@ -247,15 +249,20 @@ class SignupScreen extends StatelessWidget {
                         height: 15,
                       ),
                       Row(
-                        children: const [
+                        children: [
                           Text(
                             'By sigining up, you agree to our communication and usage terms. Already have an account?',
+                            style: GoogleFonts.inriaSans(
+                              fontSize: 15,
+                              color: Colors.black,
+                            ),
                           ),
                           Text(
                             ' Sign in',
-                            style: TextStyle(
-                              color: Color.fromARGB(255, 29, 100, 244),
-                              fontWeight: FontWeight.w500,
+                            style: GoogleFonts.inriaSans(
+                              color: const Color.fromARGB(255, 29, 100, 244),
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
                             ),
                           ),
                         ],

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ProfilesecScreen extends StatelessWidget {
   const ProfilesecScreen({super.key});
@@ -28,23 +29,23 @@ class ProfilesecScreen extends StatelessWidget {
                   const SizedBox(
                     height: 35,
                   ),
-                  const Text(
+                  Text(
                     'REFUGE',
-                    style: TextStyle(
-                      fontSize: 33,
+                    style: GoogleFonts.inriaSerif(
+                      fontSize: 30,
                       fontWeight: FontWeight.bold,
-                      color: Color.fromARGB(255, 255, 255, 255),
+                      color: const Color.fromARGB(255, 255, 255, 255),
                     ),
                   ),
                   const SizedBox(
                     height: 60,
                   ),
                   SizedBox(
-                    width: 140,
+                    width: 150,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
-                      children: const [
-                        Padding(
+                      children: [
+                        const Padding(
                           padding: EdgeInsets.all(8.0),
                           child: Icon(
                             Icons.dashboard_sharp,
@@ -53,9 +54,9 @@ class ProfilesecScreen extends StatelessWidget {
                         ),
                         Text(
                           'Dashboard',
-                          style: TextStyle(
-                            color: Color.fromARGB(200, 255, 255, 255),
-                            fontSize: 20,
+                          style: GoogleFonts.inriaSans(
+                            color: const Color.fromARGB(200, 255, 255, 255),
+                            fontSize: 22,
                           ),
                         ),
                       ],
@@ -65,11 +66,11 @@ class ProfilesecScreen extends StatelessWidget {
                     height: 15,
                   ),
                   SizedBox(
-                    width: 140,
+                    width: 150,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
-                      children: const [
-                        Padding(
+                      children: [
+                        const Padding(
                           padding: EdgeInsets.all(8.0),
                           child: Icon(
                             Icons.account_circle_rounded,
@@ -78,9 +79,9 @@ class ProfilesecScreen extends StatelessWidget {
                         ),
                         Text(
                           'Profile',
-                          style: TextStyle(
-                            color: Color.fromARGB(255, 255, 255, 255),
-                            fontSize: 20,
+                          style: GoogleFonts.inriaSans(
+                            color: const Color.fromARGB(255, 255, 255, 255),
+                            fontSize: 22,
                           ),
                         ),
                       ],
@@ -90,11 +91,11 @@ class ProfilesecScreen extends StatelessWidget {
                     height: 15,
                   ),
                   SizedBox(
-                    width: 140,
+                    width: 150,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
-                      children: const [
-                        Padding(
+                      children: [
+                        const Padding(
                           padding: EdgeInsets.all(8.0),
                           child: Icon(
                             Icons.location_on,
@@ -103,9 +104,9 @@ class ProfilesecScreen extends StatelessWidget {
                         ),
                         Text(
                           'Map',
-                          style: TextStyle(
-                            color: Color.fromARGB(200, 255, 255, 255),
-                            fontSize: 20,
+                          style: GoogleFonts.inriaSans(
+                            color: const Color.fromARGB(200, 255, 255, 255),
+                            fontSize: 22,
                           ),
                         ),
                       ],
@@ -115,11 +116,11 @@ class ProfilesecScreen extends StatelessWidget {
                     height: 15,
                   ),
                   SizedBox(
-                    width: 140,
+                    width: 150,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
-                      children: const [
-                        Padding(
+                      children: [
+                        const Padding(
                           padding: EdgeInsets.all(8.0),
                           child: Icon(
                             Icons.query_stats,
@@ -128,33 +129,8 @@ class ProfilesecScreen extends StatelessWidget {
                         ),
                         Text(
                           'Statistics',
-                          style: TextStyle(
-                            color: Color.fromARGB(200, 255, 255, 255),
-                            fontSize: 20,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 15,
-                  ),
-                  SizedBox(
-                    width: 140,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: const [
-                        Padding(
-                          padding: EdgeInsets.all(8.0),
-                          child: Icon(
-                            Icons.library_books_rounded,
-                            color: Color.fromARGB(200, 255, 255, 255),
-                          ),
-                        ),
-                        Text(
-                          'Class',
-                          style: TextStyle(
-                            color: Color.fromARGB(200, 255, 255, 255),
+                          style: GoogleFonts.inriaSans(
+                            color: const Color.fromARGB(200, 255, 255, 255),
                             fontSize: 20,
                           ),
                         ),
@@ -168,8 +144,33 @@ class ProfilesecScreen extends StatelessWidget {
                     width: 150,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
-                      children: const [
-                        Padding(
+                      children: [
+                        const Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Icon(
+                            Icons.library_books_rounded,
+                            color: Color.fromARGB(200, 255, 255, 255),
+                          ),
+                        ),
+                        Text(
+                          'Class',
+                          style: GoogleFonts.inriaSans(
+                            color: const Color.fromARGB(200, 255, 255, 255),
+                            fontSize: 20,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 15,
+                  ),
+                  SizedBox(
+                    width: 160,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        const Padding(
                           padding: EdgeInsets.all(8.0),
                           child: Icon(
                             Icons.notifications,
@@ -178,9 +179,9 @@ class ProfilesecScreen extends StatelessWidget {
                         ),
                         Text(
                           'Notification',
-                          style: TextStyle(
-                            color: Color.fromARGB(200, 255, 255, 255),
-                            fontSize: 20,
+                          style: GoogleFonts.inriaSans(
+                            color: const Color.fromARGB(200, 255, 255, 255),
+                            fontSize: 22,
                           ),
                         ),
                       ],
@@ -193,8 +194,8 @@ class ProfilesecScreen extends StatelessWidget {
                     width: 140,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
-                      children: const [
-                        Padding(
+                      children: [
+                        const Padding(
                           padding: EdgeInsets.all(8.0),
                           child: Icon(
                             Icons.logout_rounded,
@@ -203,9 +204,9 @@ class ProfilesecScreen extends StatelessWidget {
                         ),
                         Text(
                           'Logout',
-                          style: TextStyle(
-                            color: Color.fromARGB(220, 255, 255, 255),
-                            fontSize: 15,
+                          style: GoogleFonts.inriaSans(
+                            color: const Color.fromARGB(220, 255, 255, 255),
+                            fontSize: 16,
                           ),
                         ),
                       ],
@@ -217,7 +218,7 @@ class ProfilesecScreen extends StatelessWidget {
             Expanded(
               child: Center(
                 child: SizedBox(
-                  width: 700,
+                  width: 1000,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
@@ -262,10 +263,10 @@ class ProfilesecScreen extends StatelessWidget {
                       const SizedBox(
                         height: 20,
                       ),
-                      const Text(
+                      Text(
                         'CAPSTONE MINISTRIES',
-                        style: TextStyle(
-                          color: Color.fromARGB(255, 29, 100, 244),
+                        style: GoogleFonts.inriaSans(
+                          color: const Color.fromARGB(255, 29, 100, 244),
                           fontWeight: FontWeight.w600,
                           fontSize: 30,
                         ),
@@ -273,10 +274,10 @@ class ProfilesecScreen extends StatelessWidget {
                       const SizedBox(
                         height: 10,
                       ),
-                      const Text(
+                      Text(
                         'CONTACT DETAILS',
-                        style: TextStyle(
-                          color: Color.fromARGB(255, 29, 100, 244),
+                        style: GoogleFonts.inriaSans(
+                          color: const Color.fromARGB(255, 29, 100, 244),
                           fontWeight: FontWeight.w600,
                           fontSize: 20,
                         ),
@@ -317,10 +318,10 @@ class ProfilesecScreen extends StatelessWidget {
                       const SizedBox(
                         height: 10,
                       ),
-                      const Text(
+                      Text(
                         'REGISTRATION DETAILS',
-                        style: TextStyle(
-                          color: Color.fromARGB(255, 29, 100, 244),
+                        style: GoogleFonts.inriaSans(
+                          color: const Color.fromARGB(255, 29, 100, 244),
                           fontWeight: FontWeight.w600,
                           fontSize: 20,
                         ),
@@ -346,10 +347,10 @@ class ProfilesecScreen extends StatelessWidget {
                       const SizedBox(
                         height: 10,
                       ),
-                      const Text(
+                      Text(
                         'AREA OF HELP',
-                        style: TextStyle(
-                          color: Color.fromARGB(255, 29, 100, 244),
+                        style: GoogleFonts.inriaSans(
+                          color: const Color.fromARGB(255, 29, 100, 244),
                           fontWeight: FontWeight.w600,
                           fontSize: 20,
                         ),
@@ -364,10 +365,10 @@ class ProfilesecScreen extends StatelessWidget {
                         height: 20,
                       ),
                       SizedBox(
-                        width: 250,
+                        width: 200,
                         child: Material(
                           elevation: 4,
-                          color: const Color.fromARGB(255, 84, 133, 234),
+                          color: const Color.fromARGB(255, 26, 75, 214),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10),
                             side: const BorderSide(

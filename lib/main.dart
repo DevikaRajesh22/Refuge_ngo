@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:refuge_ngo/ui/screens/profile_screen.dart';
+import 'package:refuge_ngo/ui/screens/profilesec_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ProfileScreen(),
+      home: ProfilesecScreen(),
     );
   }
 }

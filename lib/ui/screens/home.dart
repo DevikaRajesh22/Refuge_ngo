@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:refuge_ngo/ui/screens/classsec_screen.dart';
+import 'package:refuge_ngo/ui/screens/class_screen.dart';
 import 'package:refuge_ngo/ui/screens/dashboard_screen.dart';
 import 'package:refuge_ngo/ui/screens/map_screen.dart';
 import 'package:refuge_ngo/ui/screens/notification_screen.dart';
@@ -34,7 +34,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
       appBar: AppBar(
         actions: const [
           SizedBox(
-            width: 300,
+            width: 250,
             child: TextField(
               decoration: InputDecoration(
                 labelStyle: TextStyle(color: Colors.white),
@@ -77,7 +77,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
           ProfileScreen(),
           MapScreen(),
           StatisticsScreen(),
-          ClasssecScreen(),
+          ClassScreen(),
           NotificationScreen(),
         ],
       ),

@@ -25,6 +25,81 @@ class DashboardScreen extends StatelessWidget {
                       children: [
                         Column(
                           children: [
+                            SizedBox(
+                              width: 550,
+                              child: Material(
+                                elevation: 10,
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(20)),
+                                color: Colors.white,
+                                child: Padding(
+                                  padding: const EdgeInsets.symmetric(
+                                    horizontal: 20,
+                                    vertical: 15,
+                                  ),
+                                  child: Column(
+                                    children: [
+                                      const SizedBox(
+                                        height: 5,
+                                      ),
+                                      Row(
+                                        children: [
+                                          Image.asset(
+                                            'assets/images/camp.jpg',
+                                            height: 100,
+                                            width: 100,
+                                          ),
+                                          const SizedBox(
+                                            width: 70,
+                                          ),
+                                          Center(
+                                            child: Column(
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.center,
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.center,
+                                              children: [
+                                                Text(
+                                                  'Camp 1',
+                                                  textAlign: TextAlign.center,
+                                                  style: GoogleFonts.inriaSans(
+                                                    fontSize: 15,
+                                                    fontWeight: FontWeight.bold,
+                                                    color: Colors.black,
+                                                  ),
+                                                ),
+                                                Text(
+                                                  'Pallipuzha Sitting Area',
+                                                  textAlign: TextAlign.center,
+                                                  style: GoogleFonts.inriaSans(
+                                                    fontSize: 15,
+                                                    fontWeight: FontWeight.bold,
+                                                    color: Colors.black,
+                                                  ),
+                                                ),
+                                                Text(
+                                                  'Safoora manzil Pallippuzha P.o Pallikkere,\n Keekan, Kerala 671316',
+                                                  textAlign: TextAlign.center,
+                                                  style: GoogleFonts.inriaSans(
+                                                    fontSize: 12,
+                                                    fontWeight: FontWeight.bold,
+                                                    color: const Color.fromARGB(
+                                                        200, 0, 0, 0),
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+                            const SizedBox(
+                              height: 10,
+                            ),
                             Material(
                               elevation: 10,
                               shape: RoundedRectangleBorder(
@@ -32,9 +107,7 @@ class DashboardScreen extends StatelessWidget {
                               color: Colors.white,
                               child: Padding(
                                 padding: const EdgeInsets.symmetric(
-                                  horizontal: 20,
-                                  vertical: 15,
-                                ),
+                                    horizontal: 20, vertical: 15),
                                 child: Column(
                                   children: [
                                     const SizedBox(
@@ -47,34 +120,43 @@ class DashboardScreen extends StatelessWidget {
                                           height: 100,
                                           width: 100,
                                         ),
-                                        Column(
-                                          children: [
-                                            Text(
-                                              'Camp 1',
-                                              style: GoogleFonts.inriaSans(
-                                                fontSize: 15,
-                                                fontWeight: FontWeight.bold,
-                                                color: Colors.black,
+                                        const SizedBox(
+                                          width: 70,
+                                        ),
+                                        Center(
+                                          child: Column(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.center,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.center,
+                                            children: [
+                                              Text(
+                                                'Camp 2',
+                                                style: GoogleFonts.inriaSans(
+                                                  fontSize: 15,
+                                                  fontWeight: FontWeight.bold,
+                                                  color: Colors.black,
+                                                ),
                                               ),
-                                            ),
-                                            Text(
-                                              'Pallipuzha Sitting Area',
-                                              style: GoogleFonts.inriaSans(
-                                                fontSize: 15,
-                                                fontWeight: FontWeight.bold,
-                                                color: Colors.black,
+                                              Text(
+                                                'Eela Tamilar Camp',
+                                                style: GoogleFonts.inriaSans(
+                                                  fontSize: 15,
+                                                  fontWeight: FontWeight.bold,
+                                                  color: Colors.black,
+                                                ),
                                               ),
-                                            ),
-                                            Text(
-                                              'Safoora manzil Pallippuzha P.o Pallikkere,\n Keekan, Kerala 671316',
-                                              style: GoogleFonts.inriaSans(
-                                                fontSize: 12,
-                                                fontWeight: FontWeight.bold,
-                                                color: const Color.fromARGB(
-                                                    200, 0, 0, 0),
+                                              Text(
+                                                'XR87+2W8, Coimbatore, Tamil Nadu 641101',
+                                                style: GoogleFonts.inriaSans(
+                                                  fontSize: 12,
+                                                  fontWeight: FontWeight.bold,
+                                                  color: const Color.fromARGB(
+                                                      200, 0, 0, 0),
+                                                ),
                                               ),
-                                            ),
-                                          ],
+                                            ],
+                                          ),
                                         ),
                                       ],
                                     )
@@ -105,92 +187,43 @@ class DashboardScreen extends StatelessWidget {
                                           height: 100,
                                           width: 100,
                                         ),
-                                        Column(
-                                          children: [
-                                            Text(
-                                              'Camp 2',
-                                              style: GoogleFonts.inriaSans(
-                                                fontSize: 15,
-                                                fontWeight: FontWeight.bold,
-                                                color: Colors.black,
-                                              ),
-                                            ),
-                                            Text(
-                                              'Eela Tamilar Camp',
-                                              style: GoogleFonts.inriaSans(
-                                                fontSize: 15,
-                                                fontWeight: FontWeight.bold,
-                                                color: Colors.black,
-                                              ),
-                                            ),
-                                            Text(
-                                              'XR87+2W8, Coimbatore, Tamil Nadu 641101',
-                                              style: GoogleFonts.inriaSans(
-                                                fontSize: 12,
-                                                fontWeight: FontWeight.bold,
-                                                color: const Color.fromARGB(
-                                                    200, 0, 0, 0),
-                                              ),
-                                            ),
-                                          ],
+                                        const SizedBox(
+                                          width: 70,
                                         ),
-                                      ],
-                                    )
-                                  ],
-                                ),
-                              ),
-                            ),
-                            const SizedBox(
-                              height: 10,
-                            ),
-                            Material(
-                              elevation: 10,
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(20)),
-                              color: Colors.white,
-                              child: Padding(
-                                padding: const EdgeInsets.symmetric(
-                                    horizontal: 20, vertical: 15),
-                                child: Column(
-                                  children: [
-                                    const SizedBox(
-                                      height: 5,
-                                    ),
-                                    Row(
-                                      children: [
-                                        Image.asset(
-                                          'assets/images/camp.jpg',
-                                          height: 100,
-                                          width: 100,
-                                        ),
-                                        Column(
-                                          children: [
-                                            Text(
-                                              'Camp 3',
-                                              style: GoogleFonts.inriaSans(
-                                                fontSize: 15,
-                                                fontWeight: FontWeight.bold,
-                                                color: Colors.black,
+                                        Center(
+                                          child: Column(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.center,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.center,
+                                            children: [
+                                              Text(
+                                                'Camp 3',
+                                                style: GoogleFonts.inriaSans(
+                                                  fontSize: 15,
+                                                  fontWeight: FontWeight.bold,
+                                                  color: Colors.black,
+                                                ),
                                               ),
-                                            ),
-                                            Text(
-                                              'Village Tibetan Settlement',
-                                              style: GoogleFonts.inriaSans(
-                                                fontSize: 15,
-                                                fontWeight: FontWeight.bold,
-                                                color: Colors.black,
+                                              Text(
+                                                'Village Tibetan Settlement',
+                                                style: GoogleFonts.inriaSans(
+                                                  fontSize: 15,
+                                                  fontWeight: FontWeight.bold,
+                                                  color: Colors.black,
+                                                ),
                                               ),
-                                            ),
-                                            Text(
-                                              '678C+FMV, Unnamed Road, Kurubarahosahalli,\n Karnataka 571189',
-                                              style: GoogleFonts.inriaSans(
-                                                fontSize: 12,
-                                                fontWeight: FontWeight.bold,
-                                                color: const Color.fromARGB(
-                                                    200, 0, 0, 0),
+                                              Text(
+                                                '678C+FMV, Unnamed Road, Kurubarahosahalli,\n Karnataka 571189',
+                                                style: GoogleFonts.inriaSans(
+                                                  fontSize: 12,
+                                                  fontWeight: FontWeight.bold,
+                                                  color: const Color.fromARGB(
+                                                      200, 0, 0, 0),
+                                                ),
                                               ),
-                                            ),
-                                          ],
+                                            ],
+                                          ),
                                         ),
                                       ],
                                     ),

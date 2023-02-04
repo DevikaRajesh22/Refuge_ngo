@@ -47,15 +47,57 @@ class StatisticsScreen extends StatelessWidget {
                                           ),
                                         ),
                                       ],
-                                      //type
                                     ),
-                                    Wrap(
+                                    const SizedBox(
+                                      height: 20,
+                                    ),
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
                                       children: const [
-                                        RefugeBreakdownItem(),
-                                        RefugeBreakdownItem(),
-                                        RefugeBreakdownItem(),
-                                        RefugeBreakdownItem(),
-                                        RefugeBreakdownItem(),
+                                        RefugeBreakdownItem(
+                                          icons: Icons.woman,
+                                          label: '35k',
+                                          text: 'Total adult female',
+                                        ),
+                                        SizedBox(
+                                          width: 10,
+                                        ),
+                                        RefugeBreakdownItem(
+                                          icons: Icons.man,
+                                          label: '33k',
+                                          text: 'Total adult male',
+                                        ),
+                                        SizedBox(
+                                          width: 10,
+                                        ),
+                                        RefugeBreakdownItem(
+                                          icons: Icons.child_care,
+                                          label: '30k',
+                                          text: 'Total children',
+                                        ),
+                                      ],
+                                    ),
+                                    const SizedBox(
+                                      height: 50,
+                                    ),
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                      children: const [
+                                        RefugeBreakdownItem(
+                                          icons: Icons.man,
+                                          label: '12k',
+                                          text: 'Total disabled people',
+                                        ),
+                                        SizedBox(
+                                          width: 10,
+                                        ),
+                                        RefugeBreakdownItem(
+                                          icons: Icons.home_filled,
+                                          label: '567',
+                                          text: 'Total camps',
+                                        ),
                                       ],
                                     ),
                                   ],
@@ -84,7 +126,7 @@ class StatisticsScreen extends StatelessWidget {
                                       Row(
                                         children: [
                                           Text(
-                                            'Total Refugees breakdown',
+                                            'Revenue Breakdown',
                                             style: GoogleFonts.inriaSans(
                                               fontSize: 15,
                                               color: const Color.fromARGB(
@@ -124,7 +166,7 @@ class StatisticsScreen extends StatelessWidget {
                                       Row(
                                         children: [
                                           Text(
-                                            'Total Refugees breakdown',
+                                            'Increase in population',
                                             style: GoogleFonts.inriaSans(
                                               fontSize: 15,
                                               color: const Color.fromARGB(
@@ -160,7 +202,7 @@ class StatisticsScreen extends StatelessWidget {
                                       Row(
                                         children: [
                                           Text(
-                                            'material 1',
+                                            'Decrease in population',
                                             style: GoogleFonts.inriaSans(
                                               fontSize: 15,
                                               color: const Color.fromARGB(
@@ -191,27 +233,36 @@ class StatisticsScreen extends StatelessWidget {
 }
 
 class RefugeBreakdownItem extends StatelessWidget {
+  final String label, text;
+  final IconData icons;
   const RefugeBreakdownItem({
     super.key,
+    required this.label,
+    required this.text,
+    required this.icons,
   });
 
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: const [
-        Icon(Icons.woman),
+      children: [
+        Icon(
+          icons,
+          size: 30,
+          color: const Color.fromARGB(255, 3, 4, 94),
+        ),
         Text(
-          '35k',
-          style: TextStyle(
-            fontSize: 13,
+          label,
+          style: const TextStyle(
+            fontSize: 15,
             fontWeight: FontWeight.bold,
             color: Color.fromARGB(255, 3, 4, 94),
           ),
         ),
         Text(
-          'Total adult female',
-          style: TextStyle(
-            fontSize: 12,
+          text,
+          style: const TextStyle(
+            fontSize: 13,
             fontWeight: FontWeight.bold,
             color: Color.fromARGB(255, 3, 4, 94),
           ),

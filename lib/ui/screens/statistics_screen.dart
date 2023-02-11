@@ -12,95 +12,102 @@ class StatisticsScreen extends StatelessWidget {
           child: Center(
             child: SizedBox(
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   const SizedBox(
                     height: 50,
                   ),
                   Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: Material(
-                              elevation: 10,
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(20)),
-                              color: Colors.white,
-                              child: Padding(
-                                padding: const EdgeInsets.symmetric(
-                                    horizontal: 20, vertical: 15),
-                                child: Column(
-                                  children: [
-                                    Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          'Total Refugees breakdown',
-                                          style: GoogleFonts.inriaSans(
-                                            fontSize: 15,
-                                            color: const Color.fromARGB(
-                                                255, 3, 4, 94),
-                                            fontWeight: FontWeight.bold,
+                            child: SizedBox(
+                              height: 330,
+                              width: 500,
+                              child: Material(
+                                elevation: 10,
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(20)),
+                                color: Colors.white,
+                                child: Padding(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 20, vertical: 15),
+                                  child: Column(
+                                    children: [
+                                      Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: [
+                                          Text(
+                                            'Total Refugees Breakdown',
+                                            style: GoogleFonts.inriaSans(
+                                              fontSize: 20,
+                                              color: const Color.fromARGB(
+                                                  255, 3, 4, 94),
+                                              fontWeight: FontWeight.bold,
+                                            ),
                                           ),
-                                        ),
-                                      ],
-                                    ),
-                                    const SizedBox(
-                                      height: 20,
-                                    ),
-                                    Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.start,
-                                      children: const [
-                                        RefugeBreakdownItem(
-                                          icons: Icons.woman,
-                                          label: '35k',
-                                          text: 'Total adult female',
-                                        ),
-                                        SizedBox(
-                                          width: 10,
-                                        ),
-                                        RefugeBreakdownItem(
-                                          icons: Icons.man,
-                                          label: '33k',
-                                          text: 'Total adult male',
-                                        ),
-                                        SizedBox(
-                                          width: 10,
-                                        ),
-                                        RefugeBreakdownItem(
-                                          icons: Icons.child_care,
-                                          label: '30k',
-                                          text: 'Total children',
-                                        ),
-                                      ],
-                                    ),
-                                    const SizedBox(
-                                      height: 50,
-                                    ),
-                                    Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.start,
-                                      children: const [
-                                        RefugeBreakdownItem(
-                                          icons: Icons.man,
-                                          label: '12k',
-                                          text: 'Total disabled people',
-                                        ),
-                                        SizedBox(
-                                          width: 10,
-                                        ),
-                                        RefugeBreakdownItem(
-                                          icons: Icons.home_filled,
-                                          label: '567',
-                                          text: 'Total camps',
-                                        ),
-                                      ],
-                                    ),
-                                  ],
+                                        ],
+                                      ),
+                                      const SizedBox(
+                                        height: 20,
+                                      ),
+                                      Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: const [
+                                          RefugeBreakdownItem(
+                                            icons: Icons.woman,
+                                            label: '35k',
+                                            text: 'Total adult female',
+                                          ),
+                                          SizedBox(
+                                            width: 10,
+                                          ),
+                                          RefugeBreakdownItem(
+                                            icons: Icons.man,
+                                            label: '33k',
+                                            text: 'Total adult male',
+                                          ),
+                                          SizedBox(
+                                            width: 10,
+                                          ),
+                                          RefugeBreakdownItem(
+                                            icons: Icons.child_care,
+                                            label: '30k',
+                                            text: 'Total children',
+                                          ),
+                                        ],
+                                      ),
+                                      const SizedBox(
+                                        height: 50,
+                                      ),
+                                      Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: const [
+                                          RefugeBreakdownItem(
+                                            icons: Icons.man,
+                                            label: '12k',
+                                            text: 'Total disabled people',
+                                          ),
+                                          SizedBox(
+                                            width: 10,
+                                          ),
+                                          RefugeBreakdownItem(
+                                            icons: Icons.home_filled,
+                                            label: '567',
+                                            text: 'Total camps',
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ),
                             ),
@@ -108,8 +115,8 @@ class StatisticsScreen extends StatelessWidget {
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: SizedBox(
-                              height: 200,
-                              width: 400,
+                              height: 330,
+                              width: 500,
                               child: Material(
                                 elevation: 10,
                                 shape: RoundedRectangleBorder(
@@ -123,15 +130,21 @@ class StatisticsScreen extends StatelessWidget {
                                       const SizedBox(
                                         height: 5,
                                       ),
-                                      Row(
+                                      Column(
                                         children: [
                                           Text(
                                             'Revenue Breakdown',
                                             style: GoogleFonts.inriaSans(
-                                              fontSize: 15,
+                                              fontSize: 20,
                                               color: const Color.fromARGB(
                                                   255, 3, 4, 94),
+                                              fontWeight: FontWeight.bold,
                                             ),
+                                          ),
+                                          Image.asset(
+                                            'assets/images/piechart.png',
+                                            height: 250,
+                                            width: 250,
                                           ),
                                         ],
                                       ),
@@ -144,12 +157,13 @@ class StatisticsScreen extends StatelessWidget {
                         ],
                       ),
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: SizedBox(
-                              height: 200,
-                              width: 400,
+                              height: 330,
+                              width: 500,
                               child: Material(
                                 elevation: 10,
                                 shape: RoundedRectangleBorder(
@@ -163,15 +177,21 @@ class StatisticsScreen extends StatelessWidget {
                                       const SizedBox(
                                         height: 5,
                                       ),
-                                      Row(
+                                      Column(
                                         children: [
                                           Text(
                                             'Increase in population',
                                             style: GoogleFonts.inriaSans(
-                                              fontSize: 15,
+                                              fontSize: 20,
                                               color: const Color.fromARGB(
                                                   255, 3, 4, 94),
+                                              fontWeight: FontWeight.bold,
                                             ),
+                                          ),
+                                          Image.asset(
+                                            'assets/images/increase.png',
+                                            height: 250,
+                                            width: 250,
                                           ),
                                         ],
                                       ),
@@ -184,8 +204,8 @@ class StatisticsScreen extends StatelessWidget {
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: SizedBox(
-                              height: 200,
-                              width: 400,
+                              height: 330,
+                              width: 500,
                               child: Material(
                                 elevation: 10,
                                 shape: RoundedRectangleBorder(
@@ -199,15 +219,21 @@ class StatisticsScreen extends StatelessWidget {
                                       const SizedBox(
                                         height: 5,
                                       ),
-                                      Row(
+                                      Column(
                                         children: [
                                           Text(
                                             'Decrease in population',
                                             style: GoogleFonts.inriaSans(
-                                              fontSize: 15,
+                                              fontSize: 20,
                                               color: const Color.fromARGB(
                                                   255, 3, 4, 94),
+                                              fontWeight: FontWeight.bold,
                                             ),
+                                          ),
+                                          Image.asset(
+                                            'assets/images/decrease.png',
+                                            height: 250,
+                                            width: 250,
                                           ),
                                         ],
                                       ),
@@ -221,7 +247,6 @@ class StatisticsScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  //type
                 ],
               ),
             ),

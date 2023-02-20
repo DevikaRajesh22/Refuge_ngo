@@ -27,7 +27,7 @@ class StatisticsScreen extends StatelessWidget {
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: SizedBox(
-                              height: 330,
+                              height: 300,
                               width: 500,
                               child: Material(
                                 elevation: 10,
@@ -115,7 +115,7 @@ class StatisticsScreen extends StatelessWidget {
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: SizedBox(
-                              height: 330,
+                              height: 300,
                               width: 500,
                               child: Material(
                                 elevation: 10,
@@ -143,7 +143,7 @@ class StatisticsScreen extends StatelessWidget {
                                           ),
                                           Image.asset(
                                             'assets/images/piechart.png',
-                                            height: 250,
+                                            height: 200,
                                             width: 250,
                                           ),
                                         ],
@@ -162,7 +162,7 @@ class StatisticsScreen extends StatelessWidget {
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: SizedBox(
-                              height: 330,
+                              height: 300,
                               width: 500,
                               child: Material(
                                 elevation: 10,
@@ -190,7 +190,7 @@ class StatisticsScreen extends StatelessWidget {
                                           ),
                                           Image.asset(
                                             'assets/images/increase.png',
-                                            height: 250,
+                                            height: 200,
                                             width: 250,
                                           ),
                                         ],
@@ -204,7 +204,7 @@ class StatisticsScreen extends StatelessWidget {
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: SizedBox(
-                              height: 330,
+                              height: 300,
                               width: 500,
                               child: Material(
                                 elevation: 10,
@@ -232,7 +232,7 @@ class StatisticsScreen extends StatelessWidget {
                                           ),
                                           Image.asset(
                                             'assets/images/decrease.png',
-                                            height: 250,
+                                            height: 200,
                                             width: 250,
                                           ),
                                         ],

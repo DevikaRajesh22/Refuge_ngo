@@ -33,20 +33,6 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
     return Scaffold(
       appBar: AppBar(
         actions: const [
-          SizedBox(
-            width: 250,
-            child: TextField(
-              decoration: InputDecoration(
-                labelStyle: TextStyle(color: Colors.white),
-                border: UnderlineInputBorder(),
-                labelText: 'Search',
-                suffixIcon: Icon(
-                  Icons.search,
-                  color: Colors.white,
-                ),
-              ),
-            ),
-          ),
           Padding(
             padding: EdgeInsets.all(4.0),
             child: Icon(

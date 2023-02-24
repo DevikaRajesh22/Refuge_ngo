@@ -36,10 +36,10 @@ class ClassScreen extends StatelessWidget {
                                 ),
                                 Row(
                                   children: [
-                                    const Icon(
-                                      Icons.account_circle_rounded,
-                                      color: Color.fromARGB(255, 29, 100, 244),
-                                      size: 70,
+                                    Image.asset(
+                                      'assets/images/people1.png',
+                                      height: 50,
+                                      width: 50,
                                     ),
                                     const SizedBox(
                                       width: 10,
@@ -120,10 +120,10 @@ class ClassScreen extends StatelessWidget {
                                 ),
                                 Row(
                                   children: [
-                                    const Icon(
-                                      Icons.account_circle_rounded,
-                                      color: Color.fromARGB(255, 29, 100, 244),
-                                      size: 70,
+                                    Image.asset(
+                                      'assets/images/people2.png',
+                                      height: 50,
+                                      width: 50,
                                     ),
                                     const SizedBox(
                                       width: 10,
@@ -204,10 +204,10 @@ class ClassScreen extends StatelessWidget {
                                 ),
                                 Row(
                                   children: [
-                                    const Icon(
-                                      Icons.account_circle_rounded,
-                                      color: Color.fromARGB(255, 29, 100, 244),
-                                      size: 70,
+                                    Image.asset(
+                                      'assets/images/people3.png',
+                                      height: 50,
+                                      width: 50,
                                     ),
                                     const SizedBox(
                                       width: 10,
@@ -288,10 +288,10 @@ class ClassScreen extends StatelessWidget {
                                 ),
                                 Row(
                                   children: [
-                                    const Icon(
-                                      Icons.account_circle_rounded,
-                                      color: Color.fromARGB(255, 29, 100, 244),
-                                      size: 70,
+                                    Image.asset(
+                                      'assets/images/people4.png',
+                                      height: 50,
+                                      width: 50,
                                     ),
                                     const SizedBox(
                                       width: 10,

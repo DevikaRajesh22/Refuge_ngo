@@ -265,6 +265,7 @@ class RefugeBreakdownItem extends StatelessWidget {
     required this.label,
     required this.text,
     required this.icons,
+    color = const Color.fromARGB(255, 44, 94, 195),
   });
 
   @override

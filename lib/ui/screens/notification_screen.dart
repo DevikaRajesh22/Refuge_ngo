@@ -19,10 +19,10 @@ class NotificationScreen extends StatelessWidget {
                       const SizedBox(
                         height: 50,
                       ),
-                      const Text(
+                      Text(
                         'Notifications',
-                        style: TextStyle(
-                          color: Color.fromARGB(255, 4, 30, 85),
+                        style: GoogleFonts.inriaSans(
+                          color: const Color.fromARGB(255, 44, 94, 195),
                           fontWeight: FontWeight.bold,
                           fontSize: 22,
                         ),
@@ -65,7 +65,7 @@ class NotificationScreen extends StatelessWidget {
                             ),
                             const Icon(
                               Icons.lock_rounded,
-                              color: Color.fromARGB(255, 4, 30, 85),
+                              color: Color.fromARGB(255, 44, 94, 195),
                             ),
                           ],
                         ),
@@ -110,7 +110,7 @@ class NotificationScreen extends StatelessWidget {
                             ),
                             const Icon(
                               Icons.attach_money_rounded,
-                              color: Color.fromARGB(255, 4, 30, 85),
+                              color: Color.fromARGB(255, 44, 94, 195),
                             ),
                           ],
                         ),
@@ -155,7 +155,7 @@ class NotificationScreen extends StatelessWidget {
                             ),
                             const Icon(
                               Icons.library_books,
-                              color: Color.fromARGB(255, 4, 30, 85),
+                              color: Color.fromARGB(255, 44, 94, 195),
                             ),
                           ],
                         ),
@@ -200,7 +200,7 @@ class NotificationScreen extends StatelessWidget {
                             ),
                             const Icon(
                               Icons.emoji_food_beverage_rounded,
-                              color: Color.fromARGB(255, 4, 30, 85),
+                              color: Color.fromARGB(255, 44, 94, 195),
                             ),
                           ],
                         ),
@@ -217,7 +217,7 @@ class NotificationScreen extends StatelessWidget {
                               'View all notifications',
                               style: TextStyle(
                                 fontSize: 18,
-                                color: Color.fromARGB(255, 4, 30, 85),
+                                color: Color.fromARGB(255, 44, 94, 195),
                                 fontWeight: FontWeight.bold,
                               ),
                             ),

@@ -99,7 +99,7 @@ class ClasssecScreen extends StatelessWidget {
                               width: 300,
                               child: Material(
                                 elevation: 7,
-                                color: const Color.fromARGB(255, 3, 4, 94),
+                                color: const Color.fromARGB(255, 44, 94, 195),
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(10),
                                   side: const BorderSide(

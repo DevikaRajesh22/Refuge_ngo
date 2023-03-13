@@ -260,12 +260,13 @@ class StatisticsScreen extends StatelessWidget {
 class RefugeBreakdownItem extends StatelessWidget {
   final String label, text;
   final IconData icons;
+  final Color color;
   const RefugeBreakdownItem({
     super.key,
     required this.label,
     required this.text,
     required this.icons,
-    color = const Color.fromARGB(255, 44, 94, 195),
+    this.color = const Color.fromARGB(255, 44, 94, 195),
   });
 
   @override
@@ -275,22 +276,22 @@ class RefugeBreakdownItem extends StatelessWidget {
         Icon(
           icons,
           size: 30,
-          color: const Color.fromARGB(255, 3, 4, 94),
+          color: color,
         ),
         Text(
           label,
-          style: const TextStyle(
+          style: TextStyle(
             fontSize: 15,
             fontWeight: FontWeight.bold,
-            color: Color.fromARGB(255, 3, 4, 94),
+            color: color,
           ),
         ),
         Text(
           text,
-          style: const TextStyle(
+          style: TextStyle(
             fontSize: 13,
             fontWeight: FontWeight.bold,
-            color: Color.fromARGB(255, 3, 4, 94),
+            color: color,
           ),
         ),
       ],

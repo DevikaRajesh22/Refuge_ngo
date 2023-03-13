@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:refuge_ngo/ui/screens/home.dart';
+import 'package:refuge_ngo/ui/screens/notification_screen.dart';
 
 void main() {
   runApp(const MyApp());

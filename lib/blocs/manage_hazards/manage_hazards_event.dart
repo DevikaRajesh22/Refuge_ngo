@@ -17,7 +17,19 @@ class AddHazardEvent extends ManageHazardsEvent {
 class DeleteHazardEvent extends ManageHazardsEvent {
   final int hazardId;
 
-  DeleteHazardEvent({required this.hazardId});
+  DeleteHazardEvent({
+    required this.hazardId,
+  });
+}
+
+class HandleHazardEvent extends ManageHazardsEvent {
+  final int hazardId;
+  final String status;
+
+  HandleHazardEvent({
+    required this.hazardId,
+    required this.status,
+  });
 }
 
 class GetAllHazardsEvent extends ManageHazardsEvent {

@@ -14,13 +14,22 @@ class ManageHazardsBloc extends Bloc<ManageHazardsEvent, ManageHazardsState> {
       SupabaseQueryBuilder queryTable = supabaseClient.from('hazard_reports');
       try {
         if (event is GetAllHazardsEvent) {
-          List<dynamic> temp = await queryTable
-              .select()
-              .eq('status', event.status)
-              .eq('level', event.level)
-              .order(
-                'created_at',
-              );
+          List<dynamic> temp = [];
+
+          if (event.status == 'accepted' || event.status == 'completed') {
+            temp = await queryTable
+                .select()
+                .eq('status', event.status)
+                .eq('level', event.level)
+                .eq('accepted_by', supabaseClient.auth.currentUser!.id)
+                .order('created_at');
+          } else {
+            temp = await queryTable
+                .select()
+                .eq('status', event.status)
+                .eq('level', event.level)
+                .order('created_at');
+          }
 
           List<Map<String, dynamic>> hazards =
               temp.map((e) => e as Map<String, dynamic>).toList();
@@ -75,6 +84,14 @@ class ManageHazardsBloc extends Bloc<ManageHazardsEvent, ManageHazardsState> {
           add(GetAllHazardsEvent());
         } else if (event is DeleteHazardEvent) {
           await queryTable.delete().eq('id', event.hazardId);
+          add(GetAllHazardsEvent());
+        } else if (event is HandleHazardEvent) {
+          await queryTable.update(
+            {
+              'status': event.status,
+              'accepted_by': supabaseClient.auth.currentUser!.id,
+            },
+          ).eq('id', event.hazardId);
           add(GetAllHazardsEvent());
         }
       } catch (e, s) {

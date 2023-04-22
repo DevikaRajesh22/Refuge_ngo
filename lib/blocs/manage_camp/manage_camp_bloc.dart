@@ -20,9 +20,13 @@ class ManageCampBloc extends Bloc<ManageCampEvent, ManageCampState> {
             temp = await queryTable
                 .select('*')
                 .ilike('name', '%${event.query}%')
+                .eq('ngo_id', supabaseClient.auth.currentUser!.id)
                 .order('name', ascending: true);
           } else {
-            temp = await queryTable.select('*').order('name', ascending: true);
+            temp = await queryTable
+                .select('*')
+                .eq('ngo_id', supabaseClient.auth.currentUser!.id)
+                .order('name', ascending: true);
           }
 
           List<Map<String, dynamic>> camps =

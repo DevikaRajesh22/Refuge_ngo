@@ -1,8 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:refuge_ngo/blocs/dashboard_count/dashboard_count_bloc.dart';
 import 'package:refuge_ngo/widgets/dashcard.dart';
 
-class DashboardScreen extends StatelessWidget {
+import '../../../widgets/custom_alert_dialog.dart';
+
+class DashboardScreen extends StatefulWidget {
   const DashboardScreen({super.key});
+
+  @override
+  State<DashboardScreen> createState() => _DashboardScreenState();
+}
+
+class _DashboardScreenState extends State<DashboardScreen> {
+  DashboardCountBloc dashboardCountBloc = DashboardCountBloc();
+  @override
+  void initState() {
+    super.initState();
+    dashboardCountBloc.add(DashboardCountEvent());
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -15,33 +31,58 @@ class DashboardScreen extends StatelessWidget {
           height: double.infinity,
         ),
         Center(
-          child: SizedBox(
-            width: 1100,
-            child: Wrap(
-              spacing: 20,
-              runSpacing: 20,
-              children: const [
-                DashCard(
-                  label: 'Hazard Requests',
-                  value: '10000',
-                  iconData: Icons.warning,
-                ),
-                DashCard(
-                  label: 'Emergency Requests',
-                  value: '10000',
-                  iconData: Icons.report,
-                ),
-                DashCard(
-                  label: 'Refugees',
-                  value: '10000',
-                  iconData: Icons.people,
-                ),
-                DashCard(
-                  label: 'Camps',
-                  value: '10000',
-                  iconData: Icons.holiday_village,
-                ),
-              ],
+          child: BlocProvider<DashboardCountBloc>.value(
+            value: dashboardCountBloc,
+            child: BlocConsumer<DashboardCountBloc, DashboardCountState>(
+              listener: (context, state) {
+                if (state is DashboardCountFailureState) {
+                  showDialog(
+                    context: context,
+                    builder: (context) => CustomAlertDialog(
+                      title: 'Failed',
+                      message: state.message,
+                      primaryButtonLabel: 'Try Again',
+                      primaryOnPressed: () {
+                        dashboardCountBloc.add(DashboardCountEvent());
+                        Navigator.pop(context);
+                      },
+                    ),
+                  );
+                }
+              },
+              builder: (context, state) {
+                return state is DashboardCountSuccessState
+                    ? SizedBox(
+                        width: 1100,
+                        child: Wrap(
+                          spacing: 20,
+                          runSpacing: 20,
+                          children: [
+                            DashCard(
+                              label: 'Hazard Requests',
+                              value: state.dashbordCount['hazard'],
+                              iconData: Icons.warning,
+                            ),
+                            DashCard(
+                              label: 'Emergency Requests',
+                              value: state.dashbordCount['service_requests'],
+                              iconData: Icons.report,
+                            ),
+                            DashCard(
+                              label: 'Refugees',
+                              value: state.dashbordCount['refugees'],
+                              iconData: Icons.people,
+                            ),
+                            DashCard(
+                              label: 'Camps',
+                              value: state.dashbordCount['camps'],
+                              iconData: Icons.holiday_village,
+                            ),
+                          ],
+                        ),
+                      )
+                    : const SizedBox();
+              },
             ),
           ),
         ),

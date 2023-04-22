@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:refuge_ngo/blocs/dashboard_count/dashboard_count_bloc.dart';
@@ -81,7 +82,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           ],
                         ),
                       )
-                    : const SizedBox();
+                    : const Center(
+                        child: CupertinoActivityIndicator(),
+                      );
               },
             ),
           ),

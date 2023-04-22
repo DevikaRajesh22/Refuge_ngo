@@ -13,18 +13,12 @@ class SignInBloc extends Bloc<SignInEvent, SignInState> {
       emit(SignInLoadingState());
 
       try {
-        AuthResponse res =
-            await Supabase.instance.client.auth.signInWithPassword(
+        await Supabase.instance.client.auth.signInWithPassword(
           email: event.email,
           password: event.password,
         );
 
-        if (res.user != null && res.user!.userMetadata!['isAdmin']) {
-          emit(SignInSuccessState());
-        } else {
-          emit(SignInFailureState());
-          Supabase.instance.client.auth.signOut();
-        }
+        emit(SignInSuccessState());
       } catch (e, s) {
         log("$e\n$s");
         emit(SignInFailureState());
